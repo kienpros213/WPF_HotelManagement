@@ -1,0 +1,193 @@
+﻿<Window x:Class="WPF_HotelManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_HotelManagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="715" Width="1167">
+    <Window.Resources>
+        <Storyboard x:Key="homeEasing">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="home_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="44">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="home_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF88C0C3"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="bookingEasing">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="booking_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="44">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="booking_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF88C0C3"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="reportEasing">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="report_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="44">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="report_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF88C0C3"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="occupiedEasing">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="occupied_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="44">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="occupied_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF88C0C3"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="homeEasingReverse">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="home_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <SplineDoubleKeyFrame KeyTime="0" Value="44"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="home_layer">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="bookingEasingReverse">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="booking_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <SplineDoubleKeyFrame KeyTime="0" Value="44"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="booking_layer">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="reportEasingReverse">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="report_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <SplineDoubleKeyFrame KeyTime="0" Value="44"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="report_layer">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="occupiedEasingReverse">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="occupied_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <SplineDoubleKeyFrame KeyTime="0" Value="44"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="occupied_layer">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="bookingClick"/>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="home_top_layer">
+            <BeginStoryboard Storyboard="{StaticResource homeEasing}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="home_top_layer">
+            <BeginStoryboard x:Name="homeEasingReverse_BeginStoryboard" Storyboard="{StaticResource homeEasingReverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="booking_top_layer">
+            <BeginStoryboard x:Name="bookingEasing_BeginStoryboard" Storyboard="{StaticResource bookingEasing}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="booking_top_layer">
+            <BeginStoryboard x:Name="bookingEasingReverse_BeginStoryboard" Storyboard="{StaticResource bookingEasingReverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="report_top_layer">
+            <BeginStoryboard x:Name="reportEasing_BeginStoryboard" Storyboard="{StaticResource reportEasing}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="report_top_layer">
+            <BeginStoryboard x:Name="reportEasingReverse_BeginStoryboard" Storyboard="{StaticResource reportEasingReverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="occupied_top_layer">
+            <BeginStoryboard x:Name="occupiedEasing_BeginStoryboard" Storyboard="{StaticResource occupiedEasing}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="occupied_top_layer">
+            <BeginStoryboard x:Name="occupiedEasingReverse_BeginStoryboard" Storyboard="{StaticResource occupiedEasingReverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource bookingClick}"/>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Grid>
+        <Image Margin="0,44,0,0">
+            <Image.Source>
+                <BitmapImage  UriSource="/Pictures/Group 1.png" />
+            </Image.Source>
+        </Image>
+        <Rectangle x:Name="home" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Stroke="Black" VerticalAlignment="Top" Width="138" Margin="607,0,0,0"/>
+        <Rectangle x:Name="home_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Stroke="Black" VerticalAlignment="Top" Width="138" Margin="607,0,0,0"/>
+        <Label Content="HOME" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="656.5,10,0,0"/>
+        <Rectangle x:Name="home_top_layer" HorizontalAlignment="Left" Height="44" Stroke="Black" VerticalAlignment="Top" Width="138" Margin="607,0,0,0" Fill="#FF2929A8" Opacity="0"/>
+        <Rectangle x:Name="booking" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="booking_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Label Content="BOOKING" HorizontalAlignment="Left" Margin="787,10,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="booking_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138" Opacity="0" MouseDown="booking_top_layer_MouseDown"/>
+        <Rectangle x:Name="report" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="report_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Label Content="REPORT" HorizontalAlignment="Left" Margin="928.5,10,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="report_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138" Opacity="0"/>
+        <Rectangle x:Name="occupied" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="occupied_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Label Content="OCCUPIED" HorizontalAlignment="Left" Margin="1060.663,10,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="occupied_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138" Opacity="0"/>
+    </Grid>
+</Window>
