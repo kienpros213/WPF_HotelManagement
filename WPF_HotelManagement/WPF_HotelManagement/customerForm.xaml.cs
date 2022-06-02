@@ -23,17 +23,19 @@ namespace WPF_HotelManagement
         {
             InitializeComponent();
         }
-
-        private void roomButton_KeyDown(object sender, KeyEventArgs e)
-        {
-            roomForm _roomForm = new roomForm();
-            _roomForm.Show();
-        }
-
         private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            roomForm _roomForm = new roomForm();
-            _roomForm.Show();
+            if (string.IsNullOrWhiteSpace(customerID.Text))
+            {
+                MessageBox.Show("lmao, điền vào customerID");
+            }
+            else
+            {
+                updateCusData.Update(customerID.Text, foreName.Text, lastName.Text, customerAddress.Text, customerStatus.Text);
+                this.Close();
+                roomForm _roomForm = new roomForm();
+                _roomForm.Show();
+            }
         }
     }
 }

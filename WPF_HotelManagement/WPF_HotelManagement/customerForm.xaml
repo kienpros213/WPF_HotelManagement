@@ -234,6 +234,6 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Rectangle Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="97.5" Margin="411.5,597,0,0" Stroke="Black" VerticalAlignment="Top" Width="375" MouseDown="Rectangle_MouseDown"/>
+        <Rectangle x:Name="roomButton" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="97.5" Margin="411.5,597,0,0" Stroke="Black" VerticalAlignment="Top" Width="375" MouseDown="Rectangle_MouseDown"/>
     </Grid>
 </Window>
