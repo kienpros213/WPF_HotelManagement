@@ -27,8 +27,8 @@ namespace WPF_HotelManagement
 
         private void booking_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            bookingForm _bookingForm = new bookingForm();
-            _bookingForm.Show();
+            customerForm _customerForm = new customerForm();
+            _customerForm.Show();
         }
     }
 }

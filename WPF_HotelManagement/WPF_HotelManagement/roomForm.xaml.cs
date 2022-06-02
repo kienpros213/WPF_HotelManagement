@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace WPF_HotelManagement
 {
     /// <summary>
-    /// Interaction logic for customerForm.xaml
+    /// Interaction logic for roomForm.xaml
     /// </summary>
-    public partial class customerForm : Window
+    public partial class roomForm : Window
     {
-        public customerForm()
+        public roomForm()
         {
             InitializeComponent();
-        }
-
-        private void roomButton_KeyDown(object sender, KeyEventArgs e)
-        {
-            roomForm _roomForm = new roomForm();
-            _roomForm.Show();
         }
     }
 }

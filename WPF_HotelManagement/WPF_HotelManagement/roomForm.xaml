@@ -1,0 +1,143 @@
+﻿<Window x:Class="WPF_HotelManagement.roomForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_HotelManagement"
+        mc:Ignorable="d"
+        Title="roomForm" Height="401" Width="1272">
+    <Window.Resources>
+        <Storyboard x:Key="1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBox">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-20.125"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBox">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-14.25"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="textBox">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1.573"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="1 reverse">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="335"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="2 reverse">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
+                <SplineDoubleKeyFrame KeyTime="0" Value="335"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="3 reverse">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_3">
+                <SplineDoubleKeyFrame KeyTime="0" Value="335"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="4 reverse">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_4">
+                <SplineDoubleKeyFrame KeyTime="0" Value="335"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Rectangle x:Name="all_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,10,0,0"/>
+        <Rectangle x:Name="single_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,80,0,0"/>
+        <Rectangle x:Name="double_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,150,0,0"/>
+        <Rectangle x:Name="family_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,220,0,0"/>
+        <Rectangle x:Name="suite_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,290,0,0"/>
+        <Label Content="ALL ROOM" HorizontalAlignment="Left" Margin="36.333,24.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="SINGLE ROOM" HorizontalAlignment="Left" Margin="12.333,93.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="DOUBLE ROOM" HorizontalAlignment="Left" Margin="7.333,164.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="FAMILY ROOM" HorizontalAlignment="Left" Margin="10.333,235.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="SUIT ROOM" HorizontalAlignment="Left" Margin="27.333,302.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <DataGrid HorizontalAlignment="Left" Height="348" Margin="567,24.666,0,-2.666" VerticalAlignment="Top" Width="697"/>
+        <Label Content="Reservation ID:" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Room ID:" HorizontalAlignment="Left" Margin="220,60,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Reservation Date:" HorizontalAlignment="Left" Margin="220,110,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Date In:" HorizontalAlignment="Left" Margin="220,160,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Date Out:" HorizontalAlignment="Left" Margin="220,210,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Rectangle x:Name="all_room_Copy" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="283.5,288,0,0"/>
+        <Label Content="ALL ROOM" HorizontalAlignment="Left" Margin="319.833,302.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Rectangle x:Name="_1" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
+        <Rectangle x:Name="_2" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
+        <Rectangle x:Name="_3" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,139,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
+        <Rectangle x:Name="_4" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,190,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="427,30.5,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+    </Grid>
+</Window>

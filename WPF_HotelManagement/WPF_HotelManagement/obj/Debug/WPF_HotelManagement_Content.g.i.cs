@@ -8,31 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/beachbg.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/cf4c96676074432ee10e4a6b44478e69%201.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/customer%20address_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/customer%20id_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/customer%20status_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/customerform%20(1).png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/customerform%20(2).png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/customerform.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/email_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/fore%20name_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/group%201.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/id%20code%20_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/last%20name_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/line%205.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/lovepik_com-610082302-small%20island,%20birds,%20trees,%20water%201.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/name_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/optionpanel.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/phone%20number_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/rectangle%202.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/reservation_.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/white.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/xbutton.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/xbuttonv2.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/%e2%80%94pngtree%e2%80%942%205d%20summer%20swimming%20pool_7183389%201.p" +
-    "ng")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/%e2%80%94pngtree%e2%80%94pink%20watercolor%20brush_5658393%202.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/customerform2.png")]
 
 

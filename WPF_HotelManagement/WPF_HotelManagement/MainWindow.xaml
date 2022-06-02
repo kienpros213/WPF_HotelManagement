@@ -173,21 +173,21 @@
                 <BitmapImage  UriSource="/Pictures/Group 1.png" />
             </Image.Source>
         </Image>
-        <Rectangle x:Name="home" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Stroke="Black" VerticalAlignment="Top" Width="138" Margin="607,0,0,0"/>
-        <Rectangle x:Name="home_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Stroke="Black" VerticalAlignment="Top" Width="138" Margin="607,0,0,0"/>
+        <Rectangle x:Name="home" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="607,0,0,0"/>
+        <Rectangle x:Name="home_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="607,0,0,0"/>
         <Label Content="HOME" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="656.5,10,0,0"/>
-        <Rectangle x:Name="home_top_layer" HorizontalAlignment="Left" Height="44" Stroke="Black" VerticalAlignment="Top" Width="138" Margin="607,0,0,0" Fill="#FF2929A8" Opacity="0"/>
-        <Rectangle x:Name="booking" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
-        <Rectangle x:Name="booking_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="home_top_layer" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="607,0,0,0" Fill="#FF2929A8" Opacity="0"/>
+        <Rectangle x:Name="booking" Fill="White" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="booking_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Label Content="BOOKING" HorizontalAlignment="Left" Margin="787,10,0,0" VerticalAlignment="Top"/>
-        <Rectangle x:Name="booking_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138" Opacity="0" MouseDown="booking_top_layer_MouseDown"/>
-        <Rectangle x:Name="report" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
-        <Rectangle x:Name="report_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="booking_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0" MouseDown="booking_top_layer_MouseDown"/>
+        <Rectangle x:Name="report" Fill="White" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="report_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Label Content="REPORT" HorizontalAlignment="Left" Margin="928.5,10,0,0" VerticalAlignment="Top"/>
-        <Rectangle x:Name="report_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138" Opacity="0"/>
-        <Rectangle x:Name="occupied" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
-        <Rectangle x:Name="occupied_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="report_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0"/>
+        <Rectangle x:Name="occupied" Fill="White" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="occupied_layer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Label Content="OCCUPIED" HorizontalAlignment="Left" Margin="1060.663,10,0,0" VerticalAlignment="Top"/>
-        <Rectangle x:Name="occupied_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="138" Opacity="0"/>
+        <Rectangle x:Name="occupied_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0"/>
     </Grid>
 </Window>
