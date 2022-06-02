@@ -22,6 +22,33 @@ namespace WPF_HotelManagement
         public roomForm()
         {
             InitializeComponent();
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE roomStatus = 'unoccupied'");
+            
+        }
+
+        private void all_room_top_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE roomStatus = 'unoccupied'");
+        }
+
+        private void single_room_top_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 1 AND roomStatus = 'unoccupied')");
+        }
+
+        private void double_room_top_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 2 AND roomStatus = 'unoccupied')");
+        }
+
+        private void family_room_top_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 3 AND roomStatus = 'unoccupied')");
+        }
+
+        private void suite_room_top_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 4 AND roomStatus = 'unoccupied')");
         }
     }
 }

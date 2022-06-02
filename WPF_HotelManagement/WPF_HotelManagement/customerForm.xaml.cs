@@ -29,5 +29,11 @@ namespace WPF_HotelManagement
             roomForm _roomForm = new roomForm();
             _roomForm.Show();
         }
+
+        private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            roomForm _roomForm = new roomForm();
+            _roomForm.Show();
+        }
     }
 }

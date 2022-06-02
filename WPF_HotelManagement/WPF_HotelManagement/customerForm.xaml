@@ -126,17 +126,6 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="roomButton">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-369.75"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-10.5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="roomButton">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-99"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="roomButton">
-                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#FFE2AAAA"/>
-            </ColorAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
     <Window.Triggers>
@@ -245,15 +234,6 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Rectangle x:Name="roomButton" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="72" Margin="456.5,612,0,0" Stroke="Black" VerticalAlignment="Top" Width="295.5" RenderTransformOrigin="0.5,0.5" KeyDown="roomButton_KeyDown">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
+        <Rectangle Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="97.5" Margin="411.5,597,0,0" Stroke="Black" VerticalAlignment="Top" Width="375" MouseDown="Rectangle_MouseDown"/>
     </Grid>
 </Window>

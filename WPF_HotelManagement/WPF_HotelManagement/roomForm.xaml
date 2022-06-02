@@ -9,29 +9,17 @@
     <Window.Resources>
         <Storyboard x:Key="1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_1">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="140"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBox">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-20.125"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBox">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-14.25"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="textBox">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1.573"/>
-            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="2">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="85"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
@@ -41,7 +29,7 @@
         </Storyboard>
         <Storyboard x:Key="3">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_3">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="165"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
@@ -51,7 +39,17 @@
         </Storyboard>
         <Storyboard x:Key="4">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_4">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="5">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="85"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="335">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
@@ -62,7 +60,7 @@
         <Storyboard x:Key="1 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_1">
                 <SplineDoubleKeyFrame KeyTime="0" Value="335"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="140">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -72,7 +70,7 @@
         <Storyboard x:Key="2 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
                 <SplineDoubleKeyFrame KeyTime="0" Value="335"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="85">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -82,7 +80,7 @@
         <Storyboard x:Key="3 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_3">
                 <SplineDoubleKeyFrame KeyTime="0" Value="335"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="165">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -92,6 +90,16 @@
         <Storyboard x:Key="4 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_4">
                 <SplineDoubleKeyFrame KeyTime="0" Value="335"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="75">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="5 reverse">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_5">
+                <SplineDoubleKeyFrame KeyTime="0" Value="85"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
@@ -99,36 +107,341 @@
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="allRoom">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="all_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="all_room_layer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="200">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="singleRoom">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="single_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="single_room_layer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="200">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="doubleRoom">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="double_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="double_room_layer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="200">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="familyRoom">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="family_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="family_room_layer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="200">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="suiteRoom">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="suite_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="suite_room_layer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="200">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="allRoomReverse">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="all_room_layer">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="all_room_layer">
+                <SplineDoubleKeyFrame KeyTime="0" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="singleRoomReverse">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="single_room_layer">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="single_room_layer">
+                <SplineDoubleKeyFrame KeyTime="0" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="doubleRoomReverse">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="double_room_layer">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="double_room_layer">
+                <SplineDoubleKeyFrame KeyTime="0" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="familyRoomReverse">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="family_room_layer">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="family_room_layer">
+                <SplineDoubleKeyFrame KeyTime="0" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="suiteRoomReverse">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="suite_room_layer">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="suite_room_layer">
+                <SplineDoubleKeyFrame KeyTime="0" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="allRoomClick">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="all_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#F5A38E">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="singleRoomClick">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="single_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#F5A38E">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="doubleRoomClick">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="double_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#F5A38E">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="familyRoomClick">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="family_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#F5A38E">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="suiteRoomClick">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="suite_room_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFB1F18C"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#F5A38E">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFB1F18C">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+
     </Window.Resources>
     <Window.Triggers>
-        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
-            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="all_room_top">
+            <BeginStoryboard Storyboard="{StaticResource allRoomReverse}"/>
         </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="single_room_top">
+            <BeginStoryboard Storyboard="{StaticResource singleRoomReverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="double_room_top">
+            <BeginStoryboard Storyboard="{StaticResource doubleRoomReverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="family_room_top">
+            <BeginStoryboard Storyboard="{StaticResource familyRoomReverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="suite_room_top">
+            <BeginStoryboard Storyboard="{StaticResource suiteRoomReverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="all_room_top">
+            <BeginStoryboard Storyboard="{StaticResource allRoom}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="single_room_top">
+            <BeginStoryboard Storyboard="{StaticResource singleRoom}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="double_room_top">
+            <BeginStoryboard Storyboard="{StaticResource doubleRoom}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="family_room_top">
+            <BeginStoryboard Storyboard="{StaticResource familyRoom}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="suite_room_top">
+            <BeginStoryboard Storyboard="{StaticResource suiteRoom}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="all_room_top">
+            <BeginStoryboard x:Name="allRoomClick_BeginStoryboard" Storyboard="{StaticResource allRoomClick}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="single_room_top">
+            <BeginStoryboard x:Name="singleRoomClick_BeginStoryboard" Storyboard="{StaticResource singleRoomClick}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="double_room_top">
+            <BeginStoryboard x:Name="doubleRoomClick_BeginStoryboard" Storyboard="{StaticResource doubleRoomClick}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="family_room_top">
+            <BeginStoryboard x:Name="familyRoomClick_BeginStoryboard" Storyboard="{StaticResource familyRoomClick}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="suite_room_top">
+            <BeginStoryboard x:Name="suiteRoomClick_BeginStoryboard" Storyboard="{StaticResource suiteRoomClick}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="reservation_id">
+            <BeginStoryboard x:Name="_1_BeginStoryboard" Storyboard="{StaticResource 1}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="room_id">
+            <BeginStoryboard x:Name="_2_BeginStoryboard" Storyboard="{StaticResource 2}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="reservation_date">
+            <BeginStoryboard x:Name="_3_BeginStoryboard" Storyboard="{StaticResource 3}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="date_in">
+            <BeginStoryboard x:Name="_4_BeginStoryboard" Storyboard="{StaticResource 4}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="date_out">
+            <BeginStoryboard x:Name="_5_BeginStoryboard" Storyboard="{StaticResource 5}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="reservation_id">
+            <BeginStoryboard x:Name="_1_reverse_BeginStoryboard" Storyboard="{StaticResource 1 reverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="room_id">
+            <BeginStoryboard x:Name="_2_reverse_BeginStoryboard" Storyboard="{StaticResource 2 reverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="reservation_date">
+            <BeginStoryboard x:Name="_3_reverse_BeginStoryboard" Storyboard="{StaticResource 3 reverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="date_in">
+            <BeginStoryboard x:Name="_4_reverse_BeginStoryboard" Storyboard="{StaticResource 4 reverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="date_out">
+            <BeginStoryboard x:Name="_5_reverse_BeginStoryboard" Storyboard="{StaticResource 5 reverse}"/>
+        </EventTrigger>
+
     </Window.Triggers>
-    <Grid>
+    <Grid Margin="0,0,188,0">
         <Rectangle x:Name="all_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,10,0,0"/>
         <Rectangle x:Name="single_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,80,0,0"/>
         <Rectangle x:Name="double_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,150,0,0"/>
         <Rectangle x:Name="family_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,220,0,0"/>
         <Rectangle x:Name="suite_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,290,0,0"/>
-        <Label Content="ALL ROOM" HorizontalAlignment="Left" Margin="36.333,24.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <Label Content="SINGLE ROOM" HorizontalAlignment="Left" Margin="12.333,93.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <Label Content="DOUBLE ROOM" HorizontalAlignment="Left" Margin="7.333,164.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <Label Content="FAMILY ROOM" HorizontalAlignment="Left" Margin="10.333,235.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <Label Content="SUIT ROOM" HorizontalAlignment="Left" Margin="27.333,302.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <DataGrid HorizontalAlignment="Left" Height="348" Margin="567,24.666,0,-2.666" VerticalAlignment="Top" Width="697"/>
+        <Rectangle x:Name="all_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,10,0,0"/>
+        <Rectangle x:Name="single_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,80,0,0"/>
+        <Rectangle x:Name="double_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,150,0,0"/>
+        <Rectangle x:Name="family_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,220,0,0"/>
+        <Rectangle x:Name="suite_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,290,0,0"/>
+        <Label Content="ALL ROOM" HorizontalAlignment="Left" Margin="44.833,29.166,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="SINGLE ROOM" HorizontalAlignment="Left" Margin="29.333,98,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="DOUBLE ROOM" HorizontalAlignment="Left" Margin="24.333,169,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="FAMILY ROOM" HorizontalAlignment="Left" Margin="27.333,240,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="SUIT ROOM" HorizontalAlignment="Left" Margin="44.833,307.989,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <DataGrid x:Name="roomGrid" HorizontalAlignment="Left" Height="335.334" Margin="567,24.666,0,0" VerticalAlignment="Top" Width="505" CanUserResizeColumns="False" CanUserReorderColumns="False" GridLinesVisibility="None" FontSize="20" IsReadOnly="True"/>
         <Label Content="Reservation ID:" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="Room ID:" HorizontalAlignment="Left" Margin="220,60,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="Reservation Date:" HorizontalAlignment="Left" Margin="220,110,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="Date In:" HorizontalAlignment="Left" Margin="220,160,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="Date Out:" HorizontalAlignment="Left" Margin="220,210,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
-        <Rectangle x:Name="all_room_Copy" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="283.5,288,0,0"/>
-        <Label Content="ALL ROOM" HorizontalAlignment="Left" Margin="319.833,302.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Rectangle x:Name="update_button" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="283.5,288,0,0"/>
+        <Label x:Name="update" Content="UPDATE" HorizontalAlignment="Left" Margin="331.833,302.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
         <Rectangle x:Name="_1" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
         <Rectangle x:Name="_2" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
         <Rectangle x:Name="_3" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,139,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
         <Rectangle x:Name="_4" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,190,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="427,30.5,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="_5" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,240,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
+        <TextBox x:Name="reservation_id" HorizontalAlignment="Left" Height="30.529" Margin="369.873,16.071,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192.127" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -138,6 +451,51 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
+        <TextBox x:Name="room_id" HorizontalAlignment="Left" Height="30.529" Margin="316.35,66.071,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245.15" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="reservation_date" HorizontalAlignment="Left" Height="30.529" Margin="395.903,116.166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165.597" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="date_in" HorizontalAlignment="Left" Height="30.529" Margin="302.987,165.66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258.513" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="date_out" HorizontalAlignment="Left" Height="30.529" Margin="319.333,216.243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242.167" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Rectangle x:Name="all_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,10,0,0" Opacity="0" MouseDown="all_room_top_MouseDown"/>
+        <Rectangle x:Name="single_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,80,0,0" Opacity="0" MouseDown="single_room_top_MouseDown"/>
+        <Rectangle x:Name="double_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,150,0,0" Opacity="0" MouseDown="double_room_top_MouseDown"/>
+        <Rectangle x:Name="family_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,220,0,0" Opacity="0" MouseDown="family_room_top_MouseDown"/>
+        <Rectangle x:Name="suite_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,290,0,0" Opacity="0" MouseDown="suite_room_top_MouseDown"/>
 
     </Grid>
 </Window>
