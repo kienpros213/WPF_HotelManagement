@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPF_HotelManagement.occupiedRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_HotelManagement"
+        mc:Ignorable="d"
+        Title="occupiedRoom" Height="468.132" Width="800">
+    <Grid>
+        <Rectangle x:Name="all_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,10,0,0"/>
+        <Rectangle x:Name="single_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,80,0,0"/>
+        <Rectangle x:Name="double_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,150,0,0"/>
+        <Rectangle x:Name="family_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,220,0,0"/>
+        <Rectangle x:Name="suite_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,290,0,0"/>
+        <Rectangle x:Name="all_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,10,0,0"/>
+        <Rectangle x:Name="single_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,80,0,0"/>
+        <Rectangle x:Name="double_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,150,0,0"/>
+        <Rectangle x:Name="family_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,220,0,0"/>
+        <Rectangle x:Name="suite_room_layer" Fill="#FFB1F18C" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,290,0,0"/>
+        <Label Content="ALL ROOM" HorizontalAlignment="Left" Margin="44.833,29.166,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="SINGLE ROOM" HorizontalAlignment="Left" Margin="29.333,98,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="DOUBLE ROOM" HorizontalAlignment="Left" Margin="24.333,169,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="FAMILY ROOM" HorizontalAlignment="Left" Margin="27.333,240,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="SUIT ROOM" HorizontalAlignment="Left" Margin="44.833,307.989,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Rectangle x:Name="all_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,10,0,0" Opacity="0" MouseDown="all_room_top_MouseDown"/>
+        <Rectangle x:Name="single_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,80,0,0" Opacity="0" MouseDown="single_room_top_MouseDown"/>
+        <Rectangle x:Name="double_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,150,0,0" Opacity="0" MouseDown="double_room_top_MouseDown"/>
+        <Rectangle x:Name="family_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,220,0,0" Opacity="0" MouseDown="family_room_top_MouseDown"/>
+        <Rectangle x:Name="suite_room_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,290,0,0" Opacity="0" MouseDown="suite_room_top_MouseDown"/>
+        <DataGrid x:Name="roomGrid" HorizontalAlignment="Left" Height="335.334" Margin="222.495,9.255,0,0" VerticalAlignment="Top" Width="505" CanUserResizeColumns="False" CanUserReorderColumns="False" GridLinesVisibility="None" FontSize="20" IsReadOnly="True" HeadersVisibility="None" SelectedCellsChanged="roomGrid_SelectedCellsChanged" />
+        <Rectangle x:Name="update_button" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="365.918,352.411,0,-3.411" MouseDown="update_button_MouseDown"/>
+        <Rectangle x:Name="update_button_top" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="365.918,352.411,0,-3.411" MouseDown="update_button_MouseDown"/>
+        <Label x:Name="update" Content="CHECK OUT" HorizontalAlignment="Left" Margin="399.408,367.076,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+
+    </Grid>
+</Window>

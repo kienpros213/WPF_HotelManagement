@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="occupiedRoom.xaml.cs">
+      <DependentUpon>occupiedRoom.xaml</DependentUpon>
+    </Compile>
     <Compile Include="roomForm.xaml.cs">
       <DependentUpon>roomForm.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="occupiedRoom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="roomForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

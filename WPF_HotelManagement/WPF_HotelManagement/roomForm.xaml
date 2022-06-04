@@ -447,7 +447,7 @@
         <Label Content="DOUBLE ROOM" HorizontalAlignment="Left" Margin="24.333,169,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="FAMILY ROOM" HorizontalAlignment="Left" Margin="27.333,240,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="SUIT ROOM" HorizontalAlignment="Left" Margin="44.833,307.989,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
-        <DataGrid x:Name="roomGrid" HorizontalAlignment="Left" Height="335.334" Margin="567,24.666,0,0" VerticalAlignment="Top" Width="505" CanUserResizeColumns="False" CanUserReorderColumns="False" GridLinesVisibility="None" FontSize="20" IsReadOnly="True"/>
+        <DataGrid x:Name="roomGrid" HorizontalAlignment="Left" Height="341.929" Margin="583.5,16.071,-12.5,0" VerticalAlignment="Top" Width="505" CanUserResizeColumns="False" CanUserReorderColumns="False" GridLinesVisibility="None" FontSize="20" IsReadOnly="True" HeadersVisibility="None" />
         <Label Content="Reservation ID:" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="Room ID:" HorizontalAlignment="Left" Margin="220,60,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="Reservation Date:" HorizontalAlignment="Left" Margin="220,110,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
