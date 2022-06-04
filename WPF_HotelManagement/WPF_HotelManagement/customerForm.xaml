@@ -9,7 +9,7 @@
     <Window.Resources>
         <Storyboard x:Key="1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="165"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="340">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
@@ -20,7 +20,7 @@
         <Storyboard x:Key="1 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
                 <SplineDoubleKeyFrame KeyTime="0" Value="340"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="165">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -29,7 +29,7 @@
         </Storyboard>
         <Storyboard x:Key="2">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_1">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="150"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="340">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
@@ -39,7 +39,7 @@
         </Storyboard>
         <Storyboard x:Key="3">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="140"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="340">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
@@ -49,7 +49,7 @@
         </Storyboard>
         <Storyboard x:Key="4">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_3">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="230"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="483">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
@@ -59,7 +59,7 @@
         </Storyboard>
         <Storyboard x:Key="5">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_4">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="155"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="483">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
@@ -69,7 +69,7 @@
         </Storyboard>
         <Storyboard x:Key="6">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_5">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="210"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="483">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
@@ -80,7 +80,7 @@
         <Storyboard x:Key="2 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_1">
                 <SplineDoubleKeyFrame KeyTime="0" Value="340"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="150">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -90,7 +90,7 @@
         <Storyboard x:Key="3 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
                 <SplineDoubleKeyFrame KeyTime="0" Value="340"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="140">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -100,7 +100,7 @@
         <Storyboard x:Key="4 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_3">
                 <SplineDoubleKeyFrame KeyTime="0" Value="483"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="230">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -110,7 +110,7 @@
         <Storyboard x:Key="5 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_4">
                 <SplineDoubleKeyFrame KeyTime="0" Value="483"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="155">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -120,7 +120,7 @@
         <Storyboard x:Key="6 reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_5">
                 <SplineDoubleKeyFrame KeyTime="0" Value="483"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="210">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -168,12 +168,12 @@
     </Window.Triggers>
     <Grid Margin="0,0,2,0">
         <Image Source="/Pictures/CustomerForm2.png" Margin="0,0,0,10"/>
-        <Rectangle x:Name="rectangle" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="321,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="340"/>
-        <Rectangle x:Name="_1" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="321,294,0,0" Stroke="Black" VerticalAlignment="Top" Width="340"/>
-        <Rectangle x:Name="_2" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="321,386,0,0" Stroke="Black" VerticalAlignment="Top" Width="340"/>
-        <Rectangle x:Name="_3" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="688,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="483"/>
-        <Rectangle x:Name="_4" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="688,294,0,0" Stroke="Black" VerticalAlignment="Top" Width="483"/>
-        <Rectangle x:Name="_5" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="688,386,0,0" Stroke="Black" VerticalAlignment="Top" Width="483"/>
+        <Rectangle x:Name="rectangle" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="321,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="165"/>
+        <Rectangle x:Name="_1" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="321,294,0,0" Stroke="Black" VerticalAlignment="Top" Width="150"/>
+        <Rectangle x:Name="_2" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="321,386,0,0" Stroke="Black" VerticalAlignment="Top" Width="140"/>
+        <Rectangle x:Name="_3" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="688,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="230"/>
+        <Rectangle x:Name="_4" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="688,294,0,0" Stroke="Black" VerticalAlignment="Top" Width="155"/>
+        <Rectangle x:Name="_5" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="688,386,0,0" Stroke="Black" VerticalAlignment="Top" Width="210"/>
         <TextBox x:Name="customerID" HorizontalAlignment="Left" Height="29" Margin="487,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="20" BorderBrush="{x:Null}">
             <TextBox.RenderTransform>
                 <TransformGroup>

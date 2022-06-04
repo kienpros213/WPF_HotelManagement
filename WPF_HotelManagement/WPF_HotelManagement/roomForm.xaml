@@ -332,6 +332,21 @@
                 </EasingColorKeyFrame>
             </ColorAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="updateClick">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="update_button_top">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
 
     </Window.Resources>
     <Window.Triggers>
@@ -410,6 +425,10 @@
         <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="date_out">
             <BeginStoryboard x:Name="_5_reverse_BeginStoryboard" Storyboard="{StaticResource 5 reverse}"/>
         </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource updateClick}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="update_button_top"/>
 
     </Window.Triggers>
     <Grid Margin="0,0,188,0">
@@ -434,7 +453,8 @@
         <Label Content="Reservation Date:" HorizontalAlignment="Left" Margin="220,110,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="Date In:" HorizontalAlignment="Left" Margin="220,160,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content="Date Out:" HorizontalAlignment="Left" Margin="220,210,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
-        <Rectangle x:Name="update_button" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="283.5,288,0,0"/>
+        <Rectangle x:Name="update_button" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="283.5,288,0,0" MouseDown="update_button_MouseDown"/>
+        <Rectangle x:Name="update_button_top" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="283.5,288,0,0" MouseDown="update_button_MouseDown"/>
         <Label x:Name="update" Content="UPDATE" HorizontalAlignment="Left" Margin="331.833,302.666,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
         <Rectangle x:Name="_1" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>
         <Rectangle x:Name="_2" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="2.5" Margin="226.5,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="335.5"/>

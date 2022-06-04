@@ -19,12 +19,14 @@ namespace WPF_HotelManagement
     /// </summary>
     public partial class customerForm : Window
     {
+        public static string customerText;
         public customerForm()
         {
             InitializeComponent();
         }
         private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            customerText = customerID.Text;
             if (string.IsNullOrWhiteSpace(customerID.Text))
             {
                 MessageBox.Show("lmao, điền vào customerID");

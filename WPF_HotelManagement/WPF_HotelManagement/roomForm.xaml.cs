@@ -50,5 +50,13 @@ namespace WPF_HotelManagement
         {
             getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 4 AND roomStatus = 'unoccupied')");
         }
+
+        private void update_button_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            string customerIDReserve = customerForm.customerText;
+            updateReserveData.Update(reservation_id.Text, customerIDReserve, room_id.Text, reservation_id.Text, date_in.Text, date_out.Text);
+            updateReserveData.UpdateRoomStatus(room_id.Text);
+            MessageBox.Show("lmao, updated");
+        }
     }
 }
