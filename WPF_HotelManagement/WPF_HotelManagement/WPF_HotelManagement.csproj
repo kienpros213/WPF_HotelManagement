@@ -55,7 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="bookingForm.xaml.cs">
+      <DependentUpon>bookingForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="class\deleteCustomerReservation.cs" />
+    <Compile Include="class\paymentMethod.cs" />
     <Compile Include="continute.xaml.cs">
       <DependentUpon>continute.xaml</DependentUpon>
     </Compile>
@@ -90,9 +94,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="bookingForm.xaml.cs">
-      <DependentUpon>bookingForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="class\getDataGridView.cs" />
     <Compile Include="class\getReservationData.cs" />

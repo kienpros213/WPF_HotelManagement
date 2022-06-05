@@ -61,13 +61,10 @@ namespace WPF_HotelManagement
         {
             object selectedItem = roomGrid.SelectedItem;
             selectedItemText = (roomGrid.SelectedCells[6].Column.GetCellContent(selectedItem) as TextBlock).Text;
-            MessageBox.Show(selectedItemText);
 
             reservationCheck reserveCheck = new reservationCheck();
             reserveCheck.Show();
         }
-
-        
 
         private void Window_GotFocus(object sender, RoutedEventArgs e)
         {

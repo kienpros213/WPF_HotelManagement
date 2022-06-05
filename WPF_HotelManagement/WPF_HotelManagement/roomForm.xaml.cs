@@ -56,7 +56,6 @@ namespace WPF_HotelManagement
             string customerIDReserve = customerForm.customerText;
             updateReserveData.Update(reservation_id.Text, customerIDReserve, room_id.Text, reservation_date.Text, date_in.Text, date_out.Text);
             updateReserveData.takeRoom(room_id.Text);
-            MessageBox.Show("lmao, updated");
             continute continuteWindow = new continute();
             continuteWindow.Show();
             this.Close();

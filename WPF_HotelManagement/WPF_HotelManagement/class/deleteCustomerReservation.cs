@@ -17,7 +17,6 @@ namespace WPF_HotelManagement
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
             command.ExecuteNonQuery();
-            MessageBox.Show("Customer Data Updated");
             con.Close();
         }
     }

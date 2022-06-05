@@ -23,6 +23,7 @@ namespace WPF_HotelManagement
         {
             InitializeComponent();
             getReserveDate();
+            getClassAndPrice();
         }
         string idPar = occupiedRoom.selectedItemText;
 
@@ -35,15 +36,20 @@ namespace WPF_HotelManagement
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            MessageBox.Show("customer id check out: "+cusID+"");
             updateHistory.Update(cusID);
             deleteCustomerReservation.delete(cusID);
             updateReserveData.returnRoom(_roomID);
         }
-
-        private void check_out_Copy1_MouseDown(object sender, MouseButtonEventArgs e)
+        private void getClassAndPrice()
         {
-
+            string _roomID = roomId.Text;
+            string cusID = customerId.Text;
+            paymentMethod.getClass(_roomID, roomClass, price, cusID, daysRange);
+            paymentMethod.getDaysRange(cusID, daysRange);
+            int priceValue = int.Parse(price.Text);
+            int daysRangeValue = int.Parse(daysRange.Text);
+            int result = priceValue * daysRangeValue;
+            total.Text = result.ToString();
         }
     }
 }
