@@ -39,11 +39,18 @@ namespace WPF_HotelManagement
 
             if (isOpen == false)
             {
-                //customerForm _customerForm = new customerForm();
-                //roomForm _customerForm = new roomForm();
-                occupiedRoom _customerForm = new occupiedRoom();
+                customerForm _customerForm = new customerForm();
+                //continute _customerForm = new continute();
+                //occupiedRoom _customerForm = new occupiedRoom();
+                //occupiedRoom _customerForm = new occupiedRoom();
                 _customerForm.Show();
             }
+        }
+
+        private void occupied_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            occupiedRoom occupiedRoom = new occupiedRoom();
+            occupiedRoom.Show();
         }
     }
 }

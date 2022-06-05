@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_HotelManagement"
         mc:Ignorable="d"
-        Title="occupiedRoom" Height="468.132" Width="800">
+        Title="occupiedRoom" Height="468.132" Width="800" GotFocus="Window_GotFocus">
     <Grid>
         <Rectangle x:Name="all_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,10,0,0"/>
         <Rectangle x:Name="single_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="0,80,0,0"/>

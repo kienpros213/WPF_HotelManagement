@@ -5,132 +5,233 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_HotelManagement"
         mc:Ignorable="d"
-        Title="customerForm" Height="764" Width="1219">
+        Title="customerForm" Height="629" Width="1055.5">
     <Window.Resources>
         <Storyboard x:Key="1">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
-                <EasingDoubleKeyFrame KeyTime="0" Value="165"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="340">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="customerID">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF4F4F4F"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="customerID">
+                <EasingThicknessKeyFrame KeyTime="0" Value="2"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="4">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="1 reverse">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
-                <SplineDoubleKeyFrame KeyTime="0" Value="340"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="165">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="customerID">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF4F4F4F">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="customerID">
+                <SplineThicknessKeyFrame KeyTime="0" Value="4"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="2">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="2">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_1">
-                <EasingDoubleKeyFrame KeyTime="0" Value="150"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="340">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="foreName">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF4F4F4F"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="foreName">
+                <EasingThicknessKeyFrame KeyTime="0" Value="2"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="4">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="3">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
-                <EasingDoubleKeyFrame KeyTime="0" Value="140"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="340">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="lastName">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF4F4F4F"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="lastName">
+                <EasingThicknessKeyFrame KeyTime="0" Value="2"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="4">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="4">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_3">
-                <EasingDoubleKeyFrame KeyTime="0" Value="230"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="483">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="customerStatus">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF4F4F4F"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="customerStatus">
+                <EasingThicknessKeyFrame KeyTime="0" Value="2"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="4">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="5">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_4">
-                <EasingDoubleKeyFrame KeyTime="0" Value="155"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="483">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="reservation">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF4F4F4F"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="reservation">
+                <EasingThicknessKeyFrame KeyTime="0" Value="2"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="4">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="6">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_5">
-                <EasingDoubleKeyFrame KeyTime="0" Value="210"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="483">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="customerAddress">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF4F4F4F"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="customerAddress">
+                <EasingThicknessKeyFrame KeyTime="0" Value="2"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="4">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="update_label">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="UPDATE AND TAKE ID"/>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="2 reverse">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_1">
-                <SplineDoubleKeyFrame KeyTime="0" Value="340"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="150">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="foreName">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF4F4F4F">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="foreName">
+                <SplineThicknessKeyFrame KeyTime="0" Value="4"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="2">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="3 reverse">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_2">
-                <SplineDoubleKeyFrame KeyTime="0" Value="340"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="140">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="lastName">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF4F4F4F">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="lastName">
+                <SplineThicknessKeyFrame KeyTime="0" Value="4"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="2">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="4 reverse">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_3">
-                <SplineDoubleKeyFrame KeyTime="0" Value="483"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="230">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="customerStatus">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF4F4F4F">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="customerStatus">
+                <SplineThicknessKeyFrame KeyTime="0" Value="4"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="2">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="5 reverse">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_4">
-                <SplineDoubleKeyFrame KeyTime="0" Value="483"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="155">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="reservation">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF4F4F4F">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="reservation">
+                <SplineThicknessKeyFrame KeyTime="0" Value="4"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="2">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="6 reverse">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="_5">
-                <SplineDoubleKeyFrame KeyTime="0" Value="483"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="210">
-                    <EasingDoubleKeyFrame.EasingFunction>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="customerAddress">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF4F4F4F">
+                    <EasingColorKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderThickness)" Storyboard.TargetName="customerAddress">
+                <SplineThicknessKeyFrame KeyTime="0" Value="4"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="2">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
+
+
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="customerID">
-            <BeginStoryboard x:Name="_1_BeginStoryboard" Storyboard="{StaticResource 1}"/>
+            <BeginStoryboard Storyboard="{StaticResource 1}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="customerID">
             <BeginStoryboard x:Name="_1_reverse_BeginStoryboard" Storyboard="{StaticResource 1 reverse}"/>
@@ -138,43 +239,70 @@
         <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="foreName">
             <BeginStoryboard Storyboard="{StaticResource 2}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="foreName">
-            <BeginStoryboard x:Name="_1_reverse_BeginStoryboard1" Storyboard="{StaticResource 2 reverse}"/>
-        </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="lastName">
-            <BeginStoryboard x:Name="_3_BeginStoryboard" Storyboard="{StaticResource 3}"/>
+            <BeginStoryboard Storyboard="{StaticResource 3}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="customerStatus">
+            <BeginStoryboard Storyboard="{StaticResource 4}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="reservation">
+            <BeginStoryboard Storyboard="{StaticResource 5}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="customerAddress">
+            <BeginStoryboard Storyboard="{StaticResource 6}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="foreName">
+            <BeginStoryboard x:Name="_2_reverse_BeginStoryboard" Storyboard="{StaticResource 2 reverse}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="lastName">
             <BeginStoryboard x:Name="_3_reverse_BeginStoryboard" Storyboard="{StaticResource 3 reverse}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="customerAddress">
-            <BeginStoryboard x:Name="_3_BeginStoryboard1" Storyboard="{StaticResource 4}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="customerAddress">
+        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="customerStatus">
             <BeginStoryboard x:Name="_4_reverse_BeginStoryboard" Storyboard="{StaticResource 4 reverse}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="customerStatus">
-            <BeginStoryboard x:Name="_6_BeginStoryboard" Storyboard="{StaticResource 6}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="customerStatus">
-            <BeginStoryboard x:Name="_6_reverse_BeginStoryboard" Storyboard="{StaticResource 6 reverse}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="reservation">
-            <BeginStoryboard x:Name="_5_BeginStoryboard" Storyboard="{StaticResource 5}"/>
-        </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="reservation">
-            <BeginStoryboard x:Name="_6_reverse_BeginStoryboard1" Storyboard="{StaticResource 5 reverse}"/>
+            <BeginStoryboard x:Name="_5_reverse_BeginStoryboard" Storyboard="{StaticResource 5 reverse}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="customerAddress">
+            <BeginStoryboard x:Name="_6_reverse_BeginStoryboard" Storyboard="{StaticResource 6 reverse}"/>
         </EventTrigger>
     </Window.Triggers>
     <Grid Margin="0,0,2,0">
-        <Image Source="/Pictures/CustomerForm2.png" Margin="0,0,0,10"/>
-        <Rectangle x:Name="rectangle" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="321,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="165"/>
-        <Rectangle x:Name="_1" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="321,294,0,0" Stroke="Black" VerticalAlignment="Top" Width="150"/>
-        <Rectangle x:Name="_2" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="321,386,0,0" Stroke="Black" VerticalAlignment="Top" Width="140"/>
-        <Rectangle x:Name="_3" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="688,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="230"/>
-        <Rectangle x:Name="_4" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="688,294,0,0" Stroke="Black" VerticalAlignment="Top" Width="155"/>
-        <Rectangle x:Name="_5" Fill="#FF4E3C3C" HorizontalAlignment="Left" Height="3" Margin="688,386,0,0" Stroke="Black" VerticalAlignment="Top" Width="210"/>
-        <TextBox x:Name="customerID" HorizontalAlignment="Left" Height="29" Margin="487,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="20" BorderBrush="{x:Null}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="503*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle x:Name="updateButton" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="97.5" Margin="277.5,490.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="375" MouseDown="Rectangle_MouseDown" RadiusY="10" RadiusX="10" Grid.Column="1"/>
+        <Label x:Name="update_label" Content="UDPATE AND TAKE ID" HorizontalAlignment="Left" Margin="339.5,520.5,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+        <Rectangle x:Name="update" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="97.5" Margin="277.5,490.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="375" MouseDown="Rectangle_MouseDown" RadiusY="10" RadiusX="10" Opacity="0" Grid.Column="1"/>
+        <Rectangle x:Name="form" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="114" Stroke="Black" VerticalAlignment="Top" Width="1209" Grid.ColumnSpan="2" Margin="0,0,-163.5,0"/>
+        <Label x:Name="_0" Content="Customer ID:" HorizontalAlignment="Left" Margin="99.5,165,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" Grid.Column="1"/>
+        <Label x:Name="_10" Content="Fore Name:" HorizontalAlignment="Left" Margin="99.5,265,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" Grid.Column="1"/>
+        <Label x:Name="_9" Content="Last Name:" HorizontalAlignment="Left" Margin="99.5,365,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" Grid.Column="1"/>
+        <Label x:Name="_8" Content="Customer Status :" HorizontalAlignment="Left" Margin="513.5,365,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" RenderTransformOrigin="-0.822,-3.797" Grid.Column="1"/>
+        <Label x:Name="_7" Content="Reservation :" HorizontalAlignment="Left" Margin="513.5,265,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" Width="223.397" Grid.Column="1"/>
+        <Label x:Name="_6" Content="Customer Address :" HorizontalAlignment="Left" Margin="513.5,164.246,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" Width="237" Grid.Column="1"/>
+        <TextBox x:Name="customerID" HorizontalAlignment="Left" Height="50.023" Margin="99.5,207.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Grid.Column="1">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox x:Name="foreName" HorizontalAlignment="Left" Height="50.023" Margin="99.5,307.799,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Grid.Column="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -184,7 +312,12 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="foreName" HorizontalAlignment="Left" Height="29" Margin="471,261,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="20" BorderBrush="{x:Null}">
+        <TextBox x:Name="lastName" HorizontalAlignment="Left" Height="50.023" Margin="99.5,408.253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Grid.Column="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -194,7 +327,12 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="lastName" HorizontalAlignment="Left" Height="29" Margin="470,352,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="20" BorderBrush="{x:Null}">
+        <TextBox x:Name="customerAddress" HorizontalAlignment="Left" Height="50.023" Margin="513.5,207.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Grid.Column="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -204,7 +342,12 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="customerAddress" HorizontalAlignment="Left" Height="29" Margin="925,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="20" BorderBrush="{x:Null}">
+        <TextBox x:Name="reservation" HorizontalAlignment="Left" Height="50.023" Margin="513.5,307.799,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Grid.Column="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -214,7 +357,12 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="reservation" HorizontalAlignment="Left" Height="29" Margin="852,261,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="319" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="20" BorderBrush="{x:Null}">
+        <TextBox x:Name="customerStatus" HorizontalAlignment="Left" Height="50.023" Margin="513.5,408.253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Grid.Column="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -224,18 +372,28 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="customerStatus" HorizontalAlignment="Left" Height="29" Margin="902,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="269" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="20" BorderBrush="{x:Null}">
-            <TextBox.RenderTransform>
+        <Rectangle x:Name="updateButton_Copy" Fill="#FFFFFF" HorizontalAlignment="Left" Height="9.667" VerticalAlignment="Top" Width="65.667" MouseDown="Rectangle_MouseDown" RadiusY="7" RadiusX="5" Margin="32,52.333,0,0" Grid.ColumnSpan="2"/>
+        <Rectangle x:Name="updateButton_Copy1" Fill="#FFFFFF" HorizontalAlignment="Left" Height="9.667" VerticalAlignment="Top" Width="36.278" MouseDown="Rectangle_MouseDown" RadiusY="7" RadiusX="5" Margin="28.736,42.958,0,0" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform/>
+                    <RotateTransform Angle="-45
+                                     "/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
-        <Rectangle x:Name="roomButton" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="97.5" Margin="419,585,0,0" Stroke="Black" VerticalAlignment="Top" Width="375" MouseDown="Rectangle_MouseDown" RadiusY="10" RadiusX="10"/>
-        <Label Content="UDPATE AND TAKE ID" HorizontalAlignment="Left" Margin="481,615,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-        <Rectangle x:Name="roomButton_top_layer" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="97.5" Margin="419,585,0,0" Stroke="Black" VerticalAlignment="Top" Width="375" MouseDown="Rectangle_MouseDown" RadiusY="10" RadiusX="10" Opacity="0"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="updateButton_Copy2" Fill="#FFFFFF" HorizontalAlignment="Left" Height="9.667" VerticalAlignment="Top" Width="36.278" MouseDown="Rectangle_MouseDown" RadiusY="7" RadiusX="5" Margin="29.235,62.292,0,0" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-135                                      "/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="#FF6C3325" HorizontalAlignment="Left" Height="114" Stroke="Black" VerticalAlignment="Top" Width="126" Grid.ColumnSpan="2" Opacity="0" MouseDown="Rectangle_MouseDown_1"/>
     </Grid>
 </Window>

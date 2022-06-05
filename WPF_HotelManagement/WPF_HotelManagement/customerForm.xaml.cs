@@ -39,5 +39,10 @@ namespace WPF_HotelManagement
                 _roomForm.Show();
             }
         }
+
+        private void Rectangle_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

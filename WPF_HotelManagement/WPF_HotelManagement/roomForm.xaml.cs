@@ -54,9 +54,19 @@ namespace WPF_HotelManagement
         private void update_button_MouseDown(object sender, MouseButtonEventArgs e)
         {
             string customerIDReserve = customerForm.customerText;
-            updateReserveData.Update(reservation_id.Text, customerIDReserve, room_id.Text, reservation_id.Text, date_in.Text, date_out.Text);
-            updateReserveData.UpdateRoomStatus(room_id.Text);
+            updateReserveData.Update(reservation_id.Text, customerIDReserve, room_id.Text, reservation_date.Text, date_in.Text, date_out.Text);
+            updateReserveData.takeRoom(room_id.Text);
             MessageBox.Show("lmao, updated");
+            continute continuteWindow = new continute();
+            continuteWindow.Show();
+            this.Close();
+        }
+
+        private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+            customerForm _customerForm = new customerForm();
+            _customerForm.Show();
         }
     }
 }

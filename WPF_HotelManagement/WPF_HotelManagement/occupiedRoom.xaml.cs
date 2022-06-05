@@ -22,7 +22,7 @@ namespace WPF_HotelManagement
         public occupiedRoom()
         {
             InitializeComponent();
-            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE roomStatus = 'unoccupied'");
+            getDataGridView.bindGrid(roomGrid, "select * from tblReservation left join tblCustomer on tblReservation.customerID = tblCustomer.customerID");
         }
 
         private void all_room_top_MouseDown(object sender, MouseButtonEventArgs e)
@@ -54,11 +54,24 @@ namespace WPF_HotelManagement
         {
         }
 
+
+        public static string selectedItemText;
+
         private void roomGrid_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
         {
-            object item = roomGrid.SelectedItem;
-            string ID = (roomGrid.SelectedCells[0].Column.GetCellContent(item) as TextBlock).Text;
-            MessageBox.Show(ID);
+            object selectedItem = roomGrid.SelectedItem;
+            selectedItemText = (roomGrid.SelectedCells[6].Column.GetCellContent(selectedItem) as TextBlock).Text;
+            MessageBox.Show(selectedItemText);
+
+            reservationCheck reserveCheck = new reservationCheck();
+            reserveCheck.Show();
+        }
+
+        
+
+        private void Window_GotFocus(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

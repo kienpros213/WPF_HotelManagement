@@ -17,9 +17,18 @@ namespace WPF_HotelManagement
             con.Close();
         }
 
-        public static void UpdateRoomStatus(string _roomID)
+        public static void takeRoom(string _roomID)
         {
             string sqlstring = "UPDATE tblRoom SET roomStatus = 'occupied' WHERE roomID = '" + _roomID + "'";
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
+            con.Open();
+            SqlCommand command = new SqlCommand(sqlstring, con);
+            command.ExecuteNonQuery();
+            con.Close();
+        }
+        public static void returnRoom (string _roomID)
+        {
+            string sqlstring = "UPDATE tblRoom SET roomStatus = 'unoccupied' WHERE roomID = '" + _roomID + "'";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);

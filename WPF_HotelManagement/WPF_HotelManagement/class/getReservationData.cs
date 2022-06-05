@@ -9,9 +9,9 @@ namespace WPF_HotelManagement
 {
     class getReservationData
     {
-        public static void getData(string _cusIDPar, System.Windows.Controls.TextBox _cusID, System.Windows.Controls.TextBox _reservationID, System.Windows.Controls.TextBox _roomID, System.Windows.Controls.TextBox _reserveDate, System.Windows.Controls.TextBox _dateIn, System.Windows.Controls.TextBox _dateOut, System.Windows.Controls.TextBox _cusFName, System.Windows.Controls.TextBox _cusLName, System.Windows.Controls.TextBox _cusAddress)
+        public static void getData(string _cusIDPar, System.Windows.Controls.TextBox _cusID, System.Windows.Controls.TextBox _reservationID, System.Windows.Controls.TextBox _roomID, System.Windows.Controls.TextBox _reserveDate, System.Windows.Controls.TextBox _dateIn, System.Windows.Controls.TextBox _dateOut, System.Windows.Controls.TextBox _cusFName, System.Windows.Controls.TextBox _cusLName, System.Windows.Controls.TextBox _cusAddress, System.Windows.Controls.TextBox _cusStatus)
         {
-            string sqlstring = "SELECT * FROM reservationDataView WHERE customerID = '" + _cusIDPar + "'";
+            string sqlstring = "exec viewProc @par = '" + _cusIDPar+"' ";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             SqlCommand command = new SqlCommand(sqlstring, con);
             con.Open();
@@ -27,6 +27,7 @@ namespace WPF_HotelManagement
                 _cusFName.Text = dataReader.GetValue(6).ToString();
                 _cusLName.Text = dataReader.GetValue(7).ToString();
                 _cusAddress.Text = dataReader.GetValue(8).ToString();
+                _cusStatus.Text = dataReader.GetValue(9).ToString();
             }
             con.Close();
         }

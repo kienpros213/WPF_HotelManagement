@@ -55,13 +55,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="class\deleteCustomerReservation.cs" />
+    <Compile Include="continute.xaml.cs">
+      <DependentUpon>continute.xaml</DependentUpon>
+    </Compile>
     <Compile Include="occupiedRoom.xaml.cs">
       <DependentUpon>occupiedRoom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="reservationCheck.xaml.cs">
+      <DependentUpon>reservationCheck.xaml</DependentUpon>
     </Compile>
     <Compile Include="roomForm.xaml.cs">
       <DependentUpon>roomForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="test.xaml.cs">
+      <DependentUpon>test.xaml</DependentUpon>
+    </Compile>
     <Page Include="bookingForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="continute.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -96,7 +110,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="reservationCheck.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="roomForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="test.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,6 +178,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="pictures\customerForm2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pictures\63d9a0f0ca26a6a3da699c91132aa03d 1.png" />
+    <Resource Include="pictures\Back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

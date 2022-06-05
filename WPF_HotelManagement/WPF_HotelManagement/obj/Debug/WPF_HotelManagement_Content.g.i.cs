@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/customerform2.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/63d9a0f0ca26a6a3da699c91132aa03d%201.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/back.png")]
 
 
