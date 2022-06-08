@@ -189,5 +189,9 @@
         <Rectangle x:Name="occupied_layer" Fill="White" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Label Content="OCCUPIED" HorizontalAlignment="Left" Margin="1060,10,0,0" VerticalAlignment="Top"/>
         <Rectangle x:Name="occupied_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0" MouseDown="occupied_top_layer_MouseDown"/>
+        <Rectangle x:Name="login" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="login_layer" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="label_login" Content="LOGIN" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49.5,10,0,0"/>
+        <Rectangle x:Name="login_top_layer" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Fill="#FF2929A8" Opacity="0" MouseDown="login_top_layer_MouseDown"/>
     </Grid>
 </Window>

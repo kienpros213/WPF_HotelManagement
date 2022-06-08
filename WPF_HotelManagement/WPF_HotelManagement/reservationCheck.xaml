@@ -434,16 +434,16 @@
     </Window.Triggers>
     <Grid Margin="0,0,0,-401.45">
         <Rectangle Fill="#FFF5A38E" HorizontalAlignment="Left" Height="630.675" Margin="10,96.325,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
-        <Label x:Name="_0" Content="Reservation ID :" HorizontalAlignment="Left" Margin="43.049,96.325,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" FontWeight="Bold"/>
-        <Label x:Name="_0_Copy" Content="Room ID :" HorizontalAlignment="Left" Margin="43.049,196.325,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" FontWeight="Bold"/>
-        <Label x:Name="_0_Copy1" Content="Reservation Date :" HorizontalAlignment="Left" Margin="43.049,296.325,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" Width="263" FontWeight="Bold"/>
-        <Label x:Name="_0_Copy2" Content="Date In :" HorizontalAlignment="Left" Margin="43.049,497.265,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" Width="263" FontWeight="Bold"/>
-        <Label x:Name="_0_Copy3" Content="Date Out :" HorizontalAlignment="Left" Margin="43.049,399.436,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" Width="263" FontWeight="Bold"/>
-        <Label x:Name="_0_Copy4" Content="Customer ID:" HorizontalAlignment="Left" Margin="418.884,96.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
-        <Label x:Name="_10" Content="Fore Name:" HorizontalAlignment="Left" Margin="418.884,194.994,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
-        <Label x:Name="_9" Content="Last Name:" HorizontalAlignment="Left" Margin="418.884,296.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
-        <Label x:Name="_8" Content="Customer Status :" HorizontalAlignment="Left" Margin="418.884,497.265,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" RenderTransformOrigin="-0.822,-3.797"/>
-        <Label x:Name="_6" Content="Customer Address :" HorizontalAlignment="Left" Margin="418.884,399.436,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" Width="237"/>
+        <Label x:Name="label_reserve_id" Content="Reservation ID :" HorizontalAlignment="Left" Margin="43.049,96.325,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" FontWeight="Bold"/>
+        <Label x:Name="label_room_id" Content="Room ID :" HorizontalAlignment="Left" Margin="43.049,196.325,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" FontWeight="Bold"/>
+        <Label x:Name="label_reserve_date" Content="Reservation Date :" HorizontalAlignment="Left" Margin="43.049,296.325,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" Width="263" FontWeight="Bold"/>
+        <Label x:Name="label_date_in" Content="Date In :" HorizontalAlignment="Left" Margin="43.049,497.265,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" Width="263" FontWeight="Bold"/>
+        <Label x:Name="label_date_out" Content="Date Out :" HorizontalAlignment="Left" Margin="43.049,399.436,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" Width="263" FontWeight="Bold"/>
+        <Label x:Name="label_customer_id" Content="Customer ID:" HorizontalAlignment="Left" Margin="418.884,96.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_fore_name" Content="Fore Name:" HorizontalAlignment="Left" Margin="418.884,194.994,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_last_name" Content="Last Name:" HorizontalAlignment="Left" Margin="418.884,296.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_customer_status" Content="Customer Status :" HorizontalAlignment="Left" Margin="418.884,497.265,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" RenderTransformOrigin="-0.822,-3.797"/>
+        <Label x:Name="label_customer_address" Content="Customer Address :" HorizontalAlignment="Left" Margin="418.884,399.436,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" Width="237"/>
         <TextBox x:Name="customerId" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="418.884,138.248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -600,7 +600,7 @@
         <Label x:Name="customer_info" Content="CUSTOMER INFOMATION" HorizontalAlignment="Left" Margin="159.22,28.121,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#FF88C0C3" FontWeight="Bold"/>
         <Rectangle Fill="#FFF5A38E" HorizontalAlignment="Left" Height="312.675" Margin="846,96.325,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
         <Label x:Name="customer_info_Copy" Content="PAYMENT" HorizontalAlignment="Left" Margin="1147.22,33.121,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#FF88C0C3" FontWeight="Bold"/>
-        <Label x:Name="_0_Copy5" Content="Days Range:" HorizontalAlignment="Left" Margin="888.884,96.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_days_range" Content="Days Range:" HorizontalAlignment="Left" Margin="888.884,96.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <TextBox x:Name="daysRange" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="888.884,138.248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -616,7 +616,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="_0_Copy6" Content="Room Class:" HorizontalAlignment="Left" Margin="888.884,196.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_room_class" Content="Room Class:" HorizontalAlignment="Left" Margin="888.884,196.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <TextBox x:Name="roomClass" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="888.884,238.248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -632,7 +632,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="_0_Copy7" Content="Price Per Night:" HorizontalAlignment="Left" Margin="888.884,296.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_price_per_night" Content="Price Per Night:" HorizontalAlignment="Left" Margin="888.884,296.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <TextBox x:Name="price" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="888.884,338.248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -648,7 +648,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="_0_Copy8" Content="Pay Method:" HorizontalAlignment="Left" Margin="1284.884,96.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_pay_method" Content="Pay Method:" HorizontalAlignment="Left" Margin="1284.884,96.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <TextBox x:Name="payMethod" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1284.884,138.248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -664,7 +664,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="_0_Copy9" Content="Discount:" HorizontalAlignment="Left" Margin="1284.884,196.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_discount" Content="Discount:" HorizontalAlignment="Left" Margin="1284.884,196.325,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <TextBox x:Name="discount" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1284.884,238.248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -681,7 +681,7 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Rectangle Fill="#FFF5A38E" HorizontalAlignment="Left" Height="192.193" Margin="846,439.143,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
-        <Label x:Name="_0_Copy10" Content="Total:" HorizontalAlignment="Left" Margin="1025.004,503.145,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_total" Content="Total:" HorizontalAlignment="Left" Margin="1025.004,503.145,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FF4E3C3C"/>
         <TextBox x:Name="total" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1122,503.145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
