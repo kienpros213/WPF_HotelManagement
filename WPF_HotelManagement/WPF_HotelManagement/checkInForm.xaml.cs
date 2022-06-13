@@ -22,6 +22,12 @@ namespace WPF_HotelManagement
         public checkInForm()
         {
             InitializeComponent();
+            getData();
+        }
+
+        public void getData()
+        {
+            getDataGridView.bindGrid(dataGrid, "SELECT dbo.tblReservation.customerID, dbo.tblReservation.reservationID, dbo.tblReservation.reservationDate, dbo.tblReservation.roomID, dbo.tblReservation.dateIn, dbo.tblReservation.dateOut, dbo.tblCustomer.customerFName, dbo.tblCustomer.customerLName, dbo.tblCustomer.customerAddress, dbo.tblCustomer.customerStatus FROM dbo.tblReservation CROSS JOIN dbo.tblCustomer");
         }
     }
 }
