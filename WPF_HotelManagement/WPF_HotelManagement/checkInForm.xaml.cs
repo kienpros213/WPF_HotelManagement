@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace WPF_HotelManagement
 {
     /// <summary>
-    /// Interaction logic for test.xaml
+    /// Interaction logic for checkInForm.xaml
     /// </summary>
-    public partial class test : Window
+    public partial class checkInForm : Window
     {
-        public test()
+        public checkInForm()
         {
             InitializeComponent();
-        }
-
-        private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            string text = id.Text;
-            MessageBox.Show("updated "+text+"");
-            updateReserveData.returnRoom(text);
         }
     }
 }

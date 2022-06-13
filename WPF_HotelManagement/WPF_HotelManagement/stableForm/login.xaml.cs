@@ -19,7 +19,7 @@ namespace WPF_HotelManagement
 
         private void login_layer_top_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            string sqlstring = "SELECT * FROM tblEmployees WHERE userName = '"+userNameBox+"' AND userPassword = '"+passwordBox+"'";
+            string sqlstring = "SELECT * FROM tblEmployees WHERE userName = '"+userNameBox.Text+"' AND userPassword = '"+passwordBox.Text+"'";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             SqlDataAdapter sa = new SqlDataAdapter(sqlstring, con);
             DataTable dt = new DataTable();
@@ -27,6 +27,9 @@ namespace WPF_HotelManagement
             if(dt.Rows.Count == 1)
             {
                 MessageBox.Show("welcum");
+                MainWindow main = new MainWindow();
+                main.Show();
+                this.Close();
             }
             else
             {

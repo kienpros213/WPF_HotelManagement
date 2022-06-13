@@ -22,6 +22,32 @@ namespace WPF_HotelManagement
         public bookingForm()
         {
             InitializeComponent();
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE roomStatus = 'unoccupied'");
+        }
+
+        private void single_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 1 AND roomStatus = 'unoccupied')");
+        }
+
+        private void double_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 2 AND roomStatus = 'unoccupied')");
+        }
+
+        private void family_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 3 AND roomStatus = 'unoccupied')");
+        }
+
+        private void suite_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 4 AND roomStatus = 'unoccupied')");
+        }
+
+        private void comfirm_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            updateReserveData.Update(foreName.Text, lastName.Text, customerAddress.Text, customerStatus.Text, room_id.Text, reservation_date.Text, date_in.Text, date_out.Text);
         }
     }
 }

@@ -26,18 +26,10 @@ namespace WPF_HotelManagement
         }
         private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            customerText = customerID.Text;
-            if (string.IsNullOrWhiteSpace(customerID.Text))
-            {
-                MessageBox.Show("lmao, điền vào customerID");
-            }
-            else
-            {
-                updateCusData.Update(customerID.Text, foreName.Text, lastName.Text, customerAddress.Text, customerStatus.Text);
+                updateCusData.Update(foreName.Text, lastName.Text, customerAddress.Text, customerStatus.Text);
                 this.Close();
                 roomForm _roomForm = new roomForm();
                 _roomForm.Show();
-            }
         }
 
         private void Rectangle_MouseDown_1(object sender, MouseButtonEventArgs e)
