@@ -25,7 +25,7 @@ namespace WPF_HotelManagement
             getReserveDate();
             getClassAndPrice();
         }
-        string idPar = occupiedRoom.selectedItemText;
+        string idPar = checkInForm.selectedItemText;
 
         private void getReserveDate()
         {
@@ -34,14 +34,13 @@ namespace WPF_HotelManagement
 
         private void check_out_top_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            //check-in button
             string _roomID = roomId.Text;
-            string cusID = customerId.Text;
-            updateHistory.Update(cusID);
-            deleteCustomerReservation.delete(cusID);
-            updateReserveData.returnRoom(_roomID);
+            updateReserveData.takeRoom(_roomID);
         }
         private void getClassAndPrice()
         {
+            //fill textBox
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
             paymentMethod.getClass(_roomID, roomClass, price, cusID, daysRange);

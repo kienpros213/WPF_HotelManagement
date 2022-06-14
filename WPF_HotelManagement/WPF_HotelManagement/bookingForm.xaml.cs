@@ -52,5 +52,10 @@ namespace WPF_HotelManagement
             continuteWindow.Show();
             this.Close();
         }
+        public void coulumnWidth()
+        {
+            string count = roomGrid.Columns.Count().ToString();
+            MessageBox.Show(count);       
+        }
     }
 }

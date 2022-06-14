@@ -27,7 +27,18 @@ namespace WPF_HotelManagement
 
         public void getData()
         {
-            getDataGridView.bindGrid(dataGrid, "SELECT dbo.tblReservation.customerID, dbo.tblReservation.reservationID, dbo.tblReservation.reservationDate, dbo.tblReservation.roomID, dbo.tblReservation.dateIn, dbo.tblReservation.dateOut, dbo.tblCustomer.customerFName, dbo.tblCustomer.customerLName, dbo.tblCustomer.customerAddress, dbo.tblCustomer.customerStatus FROM dbo.tblReservation CROSS JOIN dbo.tblCustomer");
+            getDataGridView.bindGrid(cusGrid, "select distinct tblCustomer.customerID, tblCustomer.customerFName, tblCustomer.customerLName, tblCustomer.customerAddress, tblCustomer.customerStatus, tblReservation.reservationID, tblReservation.reservationDate, tblReservation.dateIn, tblReservation.dateOut, tblReservation.roomID from tblCustomer, tblReservation where tblCustomer.customerID = tblReservation.customerID");
+        }
+
+        public static string selectedItemText;
+
+        private void cusGrid_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
+        {
+            object selectedItem = cusGrid.SelectedItem;
+            selectedItemText = (cusGrid.SelectedCells[0].Column.GetCellContent(selectedItem) as TextBlock).Text;
+
+            reservationCheck reserveCheck = new reservationCheck();
+            reserveCheck.Show();
         }
     }
 }

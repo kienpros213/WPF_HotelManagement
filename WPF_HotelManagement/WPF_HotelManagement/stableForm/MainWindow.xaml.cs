@@ -39,11 +39,11 @@ namespace WPF_HotelManagement
 
             if (isOpen == false)
             {
-                customerForm _customerForm = new customerForm();
+                bookingForm _bookingForm = new bookingForm();
                 //continute _customerForm = new continute();
                 //occupiedRoom _customerForm = new occupiedRoom();
                 //occupiedRoom _customerForm = new occupiedRoom();
-                _customerForm.Show();
+                _bookingForm.Show();
             }
         }
 
@@ -57,6 +57,12 @@ namespace WPF_HotelManagement
         {
             login _login = new login();
             _login.Show();
+        }
+
+        private void check_in_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            checkInForm _checkInForm = new checkInForm();
+            _checkInForm.Show();
         }
     }
 }

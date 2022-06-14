@@ -63,6 +63,9 @@
     </Compile>
     <Compile Include="class\deleteCustomerReservation.cs" />
     <Compile Include="class\paymentMethod.cs" />
+    <Compile Include="roomForm.xaml.cs">
+      <DependentUpon>roomForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="stableForm\continute.xaml.cs">
       <DependentUpon>continute.xaml</DependentUpon>
     </Compile>
@@ -75,14 +78,15 @@
     <Compile Include="stableForm\reservationCheck.xaml.cs">
       <DependentUpon>reservationCheck.xaml</DependentUpon>
     </Compile>
-    <Compile Include="roomForm.xaml.cs">
-      <DependentUpon>roomForm.xaml</DependentUpon>
-    </Compile>
     <Page Include="bookingForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="checkInForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="roomForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,10 +127,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="stableForm\reservationCheck.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="roomForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

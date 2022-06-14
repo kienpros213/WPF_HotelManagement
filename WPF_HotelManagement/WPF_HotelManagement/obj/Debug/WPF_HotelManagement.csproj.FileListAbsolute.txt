@@ -17,7 +17,6 @@ D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\De
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\roomForm.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\roomForm.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\App.baml
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\WPF_HotelManagement.csproj.AssemblyReference.cache
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\checkInForm.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\continute.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\login.g.cs
