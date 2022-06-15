@@ -22,7 +22,7 @@ namespace WPF_HotelManagement
         public bookingForm()
         {
             InitializeComponent();
-            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE roomStatus = 'unoccupied'");
+            //getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "'");
         }
 
         private void single_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
@@ -56,6 +56,11 @@ namespace WPF_HotelManagement
         {
             string count = roomGrid.Columns.Count().ToString();
             MessageBox.Show(count);       
+        }
+
+        private void search_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "'");
         }
     }
 }

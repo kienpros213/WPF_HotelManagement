@@ -9,12 +9,12 @@ WPF_HotelManagement
 none
 false
 DEBUG;TRACE
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\App.xaml
-9-1462208602
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\stableForm\App.xaml
+71469726834
 
-202050793621
-13-1505183044
-bookingForm.xaml;checkInForm.xaml;roomForm.xaml;stableForm\continute.xaml;customerForm.xaml;stableForm\login.xaml;stableForm\MainWindow.xaml;stableForm\occupiedRoom.xaml;stableForm\reservationCheck.xaml;
+19-766228444
+18995754820
+bookingForm.xaml;checkInForm.xaml;stableForm\continute.xaml;stableForm\login.xaml;stableForm\MainWindow.xaml;stableForm\occupiedRoom.xaml;stableForm\reservationCheck.xaml;
 
 False
 

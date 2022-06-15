@@ -37,6 +37,7 @@ namespace WPF_HotelManagement
             //check-in button
             string _roomID = roomId.Text;
             updateReserveData.takeRoom(_roomID);
+            MessageBox.Show("check-in success");
         }
         private void getClassAndPrice()
         {
