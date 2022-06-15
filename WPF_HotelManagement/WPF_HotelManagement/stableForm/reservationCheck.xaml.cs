@@ -22,12 +22,12 @@ namespace WPF_HotelManagement
         public reservationCheck()
         {
             InitializeComponent();
-            getReserveDate();
+            getReserveData();
             getClassAndPrice();
         }
         string idPar = checkInForm.selectedItemText;
 
-        private void getReserveDate()
+        private void getReserveData()
         {
             getReservationData.getData(idPar, customerId, reservationId, roomId, reservationDate, dateIn, dateOut, foreName, lastName, customerAddress, customerStatus);
         }
@@ -36,8 +36,10 @@ namespace WPF_HotelManagement
         {
             //check-in button
             string _roomID = roomId.Text;
-            updateReserveData.takeRoom(_roomID);
+            string _cusID = customerId.Text;
+            updateReserveData.takeRoom(_roomID, _cusID);
             MessageBox.Show("check-in success");
+            this.Close();
         }
         private void getClassAndPrice()
         {

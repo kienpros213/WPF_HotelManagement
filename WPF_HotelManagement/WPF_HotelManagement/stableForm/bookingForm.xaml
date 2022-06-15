@@ -81,14 +81,6 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reservation_date">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-814">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="label_date_in">
                 <EasingThicknessKeyFrame KeyTime="0" Value="448.858,171.977,0,0"/>
                 <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="448.858,73,0,0">
@@ -462,6 +454,14 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reservation_date">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-814">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="transtion_reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="label_last_name">
@@ -529,14 +529,6 @@
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="label_reservation_date">
-                <SplineDoubleKeyFrame KeyTime="0" Value="-814"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reservation_date">
                 <SplineDoubleKeyFrame KeyTime="0" Value="-814"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
                     <EasingDoubleKeyFrame.EasingFunction>
@@ -950,6 +942,14 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reservation_date">
+                <SplineDoubleKeyFrame KeyTime="0" Value="-814"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="singleRoom">
             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="single_room">
@@ -1243,21 +1243,6 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox TabIndex="4" x:Name="reservation_date" HorizontalAlignment="Left" Height="50.023" Margin="448.856,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </TextBox.Resources>
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
         <Label x:Name="label_room_id" Content="Room ID :" HorizontalAlignment="Left" Margin="448.856,373.746,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -1324,7 +1309,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle x:Name="choose_room_top_layer" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="297.5,76.029,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" Opacity="0" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Grid.Row="1">
+        <Rectangle x:Name="choose_room_top_layer" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="297.5,76.029,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" Opacity="0" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Grid.Row="1" MouseDown="choose_room_top_layer_MouseDown">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -1560,6 +1545,21 @@
             </Obselete:MaskedTextBox.RenderTransform>
         </Obselete:MaskedTextBox>
         <Obselete:MaskedTextBox TabIndex="5" x:Name="date_in" HorizontalAlignment="Left" Height="50.023" Margin="448.856,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Mask="0000-00-00" Text="0001-01-01">
+            <Obselete:MaskedTextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Obselete:MaskedTextBox.Resources>
+            <Obselete:MaskedTextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Obselete:MaskedTextBox.RenderTransform>
+        </Obselete:MaskedTextBox>
+        <Obselete:MaskedTextBox TabIndex="4" x:Name="reservation_date" HorizontalAlignment="Left" Height="50.023" Margin="448.856,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Mask="0000-00-00">
             <Obselete:MaskedTextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>

@@ -70,10 +70,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="bookingForm.xaml.cs">
+    <Compile Include="stableForm\bookingForm.xaml.cs">
       <DependentUpon>bookingForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="checkInForm.xaml.cs">
+    <Compile Include="stableForm\checkInForm.xaml.cs">
       <DependentUpon>checkInForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="class\deleteCustomerReservation.cs" />
@@ -91,11 +91,11 @@
     <Compile Include="stableForm\reservationCheck.xaml.cs">
       <DependentUpon>reservationCheck.xaml</DependentUpon>
     </Compile>
-    <Page Include="bookingForm.xaml">
+    <Page Include="stableForm\bookingForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="checkInForm.xaml">
+    <Page Include="stableForm\checkInForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

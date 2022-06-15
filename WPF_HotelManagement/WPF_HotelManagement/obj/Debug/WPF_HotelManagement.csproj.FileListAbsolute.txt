@@ -9,15 +9,11 @@ D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\De
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\WPF_HotelManagement.csproj.CoreCompileInputs.cache
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\WPF_HotelManagement.exe
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\WPF_HotelManagement.pdb
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\bookingForm.g.cs
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\bookingForm.baml
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\checkInForm.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\continute.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\login.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\MainWindow.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\occupiedRoom.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\reservationCheck.g.cs
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\checkInForm.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\continute.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\login.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\MainWindow.baml
@@ -43,3 +39,8 @@ D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\bin\De
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\WPF_HotelManagement.csproj.CopyComplete
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\bookingForm.g.cs
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\checkInForm.g.cs
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\bookingForm.baml
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\checkInForm.baml
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\WPF_HotelManagement.csproj.AssemblyReference.cache
