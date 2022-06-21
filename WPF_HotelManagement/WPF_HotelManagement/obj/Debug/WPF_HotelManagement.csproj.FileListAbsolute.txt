@@ -47,3 +47,5 @@ D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\De
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\checkOut.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\checkOutForm.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\checkOutForm.baml
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\Window1.g.cs
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\Window1.baml

@@ -1574,5 +1574,12 @@
                 </TransformGroup>
             </Obselete:MaskedTextBox.RenderTransform>
         </Obselete:MaskedTextBox>
+        <DatePicker HorizontalAlignment="Left" Height="50.023" Margin="338.858,61.977,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
+            <DatePicker.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </DatePicker.Resources>
+        </DatePicker>
     </Grid>
 </Window>
