@@ -88,6 +88,9 @@
     <Compile Include="stableForm\occupiedRoom.xaml.cs">
       <DependentUpon>occupiedRoom.xaml</DependentUpon>
     </Compile>
+    <Compile Include="stableForm\checkOut.xaml.cs">
+      <DependentUpon>checkOut.xaml</DependentUpon>
+    </Compile>
     <Compile Include="stableForm\reservationCheck.xaml.cs">
       <DependentUpon>reservationCheck.xaml</DependentUpon>
     </Compile>
@@ -127,6 +130,10 @@
     <Page Include="stableForm\occupiedRoom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stableForm\checkOut.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="stableForm\reservationCheck.xaml">
       <SubType>Designer</SubType>
