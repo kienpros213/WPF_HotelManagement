@@ -73,6 +73,9 @@
     <Compile Include="stableForm\bookingForm.xaml.cs">
       <DependentUpon>bookingForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="stableForm\checkOutForm.xaml.cs">
+      <DependentUpon>checkOutForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="stableForm\checkInForm.xaml.cs">
       <DependentUpon>checkInForm.xaml</DependentUpon>
     </Compile>
@@ -97,6 +100,10 @@
     <Page Include="stableForm\bookingForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stableForm\checkOutForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="stableForm\checkInForm.xaml">
       <SubType>Designer</SubType>

@@ -210,7 +210,7 @@
         <Rectangle x:Name="report_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0"/>
         <Rectangle x:Name="occupied" Fill="White" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Rectangle x:Name="occupied_layer" Fill="White" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138"/>
-        <Label Content="OCCUPIED" HorizontalAlignment="Left" Margin="1060,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="CHECK OUT" HorizontalAlignment="Left" Margin="1060,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Rectangle x:Name="occupied_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0" MouseDown="occupied_top_layer_MouseDown"/>
         <Rectangle x:Name="login" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138"/>
         <Rectangle x:Name="login_layer" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138"/>

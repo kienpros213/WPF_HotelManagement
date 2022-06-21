@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WPF_HotelManagement.stableForm
+namespace WPF_HotelManagement
 {
     /// <summary>
     /// Interaction logic for checkOutForm.xaml
@@ -22,7 +22,9 @@ namespace WPF_HotelManagement.stableForm
         public checkOutForm()
         {
             InitializeComponent();
+            getData();
         }
+
         public void getData()
         {
             getDataGridView.bindGrid(cusGrid, "select distinct tblCustomer.customerID, tblCustomer.customerFName, tblCustomer.customerLName, tblCustomer.customerAddress, tblCustomer.customerStatus, tblReservation.reservationID, tblReservation.reservationDate, tblReservation.dateIn, tblReservation.dateOut, tblReservation.roomID from tblCustomer, tblReservation where tblCustomer.customerID = tblReservation.customerID and tblCustomer.customerStatus = 'reserved' ");
