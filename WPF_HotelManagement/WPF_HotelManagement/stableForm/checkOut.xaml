@@ -595,7 +595,7 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Rectangle x:Name="check_out" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="1170,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
-        <Label x:Name="check_in_label" Content="CHECK IN" HorizontalAlignment="Left" Margin="1216,672,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.29,0.489"/>
+        <Label x:Name="check_in_label" Content="CHECK OUT" HorizontalAlignment="Left" Margin="1203.872,672.666,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.29,0.489"/>
         <Rectangle x:Name="check_out_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="1170,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Opacity="0" MouseDown="check_out_top_MouseDown"/>
         <Label x:Name="customer_info" Content="CUSTOMER INFOMATION" HorizontalAlignment="Left" Margin="159.22,28.121,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#FF88C0C3" FontWeight="Bold"/>
         <Rectangle Fill="#FFF5A38E" HorizontalAlignment="Left" Height="312.675" Margin="846,96.325,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
@@ -697,7 +697,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="breakfast" HorizontalAlignment="Left" Height="50.023" Margin="877.5,188.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" LostFocus="breakfast_LostFocus" Text="0">
+        <TextBox x:Name="breakfast" HorizontalAlignment="Left" Height="50.023" Margin="877.5,188.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -712,7 +712,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="carRenting" HorizontalAlignment="Left" Height="50.023" Margin="877.5,288.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" LostFocus="carRenting_LostFocus" Text="0">
+        <TextBox x:Name="carRenting" HorizontalAlignment="Left" Height="50.023" Margin="877.5,288.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -727,7 +727,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="cleaning" HorizontalAlignment="Left" Height="50.023" Margin="1283.5,188.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" LostFocus="cleaning_LostFocus" Text="0">
+        <TextBox x:Name="cleaning" HorizontalAlignment="Left" Height="50.023" Margin="1283.5,188.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -742,7 +742,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="massage" HorizontalAlignment="Left" Height="50.023" Margin="1283.5,288.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" LostFocus="massage_LostFocus" Text="0">
+        <TextBox x:Name="massage" HorizontalAlignment="Left" Height="50.023" Margin="1283.5,288.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>

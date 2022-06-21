@@ -49,7 +49,7 @@ namespace WPF_HotelManagement
 
         private void occupied_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            occupiedRoom occupiedRoom = new occupiedRoom();
+            checkOutForm occupiedRoom = new checkOutForm();
             occupiedRoom.Show();
         }
 
