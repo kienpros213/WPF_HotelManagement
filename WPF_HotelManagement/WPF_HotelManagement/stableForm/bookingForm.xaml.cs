@@ -23,6 +23,7 @@ namespace WPF_HotelManagement
         {
             InitializeComponent();
             //getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "'");
+            reservation_date.Text = DateTime.Now.ToString();
         }
 
         private void single_room_layer_MouseDown(object sender, MouseButtonEventArgs e)

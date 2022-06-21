@@ -406,62 +406,6 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="date_out">
-                <EasingThicknessKeyFrame KeyTime="0" Value="448.858,317,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="448.858,117,0,0">
-                    <EasingThicknessKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingThicknessKeyFrame.EasingFunction>
-                </EasingThicknessKeyFrame>
-            </ThicknessAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="date_out">
-                <EasingDoubleKeyFrame KeyTime="0" Value="350"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="158">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="date_out">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="118.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="date_in">
-                <EasingThicknessKeyFrame KeyTime="0" Value="448.856,217,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="448.856,117,0,0">
-                    <EasingThicknessKeyFrame.EasingFunction>
-                        <QuinticEase EasingMode="EaseOut"/>
-                    </EasingThicknessKeyFrame.EasingFunction>
-                </EasingThicknessKeyFrame>
-            </ThicknessAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="date_in">
-                <EasingDoubleKeyFrame KeyTime="0" Value="350"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="158">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="date_in">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-322.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reservation_date">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-814">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="transtion_reverse">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="label_last_name">
@@ -865,86 +809,6 @@
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="comfirm_layer">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-112.25"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.412">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="date_out">
-                <EasingThicknessKeyFrame KeyTime="0" Value="448.858,117,0,0">
-                    <EasingThicknessKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingThicknessKeyFrame.EasingFunction>
-                </EasingThicknessKeyFrame>
-                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="448.858,317,0,0">
-                    <EasingThicknessKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingThicknessKeyFrame.EasingFunction>
-                </EasingThicknessKeyFrame>
-            </ThicknessAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="date_out">
-                <EasingDoubleKeyFrame KeyTime="0" Value="158">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="350">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="date_out">
-                <EasingDoubleKeyFrame KeyTime="0" Value="118.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="date_in">
-                <EasingThicknessKeyFrame KeyTime="0" Value="448.856,117,0,0">
-                    <EasingThicknessKeyFrame.EasingFunction>
-                        <QuinticEase EasingMode="EaseOut"/>
-                    </EasingThicknessKeyFrame.EasingFunction>
-                </EasingThicknessKeyFrame>
-                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="448.856,217,0,0">
-                    <EasingThicknessKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingThicknessKeyFrame.EasingFunction>
-                </EasingThicknessKeyFrame>
-            </ThicknessAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="date_in">
-                <EasingDoubleKeyFrame KeyTime="0" Value="158">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="350">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="date_in">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-322.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuinticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reservation_date">
-                <SplineDoubleKeyFrame KeyTime="0" Value="-814"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -1529,52 +1393,21 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Obselete:MaskedTextBox TabIndex="6" x:Name="date_out" HorizontalAlignment="Left" Height="50.023" Margin="448.858,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Mask="0000-00-00" Text="0001-01-01">
-            <TextBox.Resources>
+        <DatePicker x:Name="reservation_date" HorizontalAlignment="Left" Height="50.023" Margin="448.856,116,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
+            <DatePicker.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
-            </TextBox.Resources>
-            <Obselete:MaskedTextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Obselete:MaskedTextBox.RenderTransform>
-        </Obselete:MaskedTextBox>
-        <Obselete:MaskedTextBox TabIndex="5" x:Name="date_in" HorizontalAlignment="Left" Height="50.023" Margin="448.856,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Mask="0000-00-00" Text="0001-01-01">
-            <Obselete:MaskedTextBox.Resources>
+            </DatePicker.Resources>
+        </DatePicker>
+        <DatePicker x:Name="date_in" HorizontalAlignment="Left" Height="50.023" Margin="448.858,215.23,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
+            <DatePicker.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
-            </Obselete:MaskedTextBox.Resources>
-            <Obselete:MaskedTextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Obselete:MaskedTextBox.RenderTransform>
-        </Obselete:MaskedTextBox>
-        <Obselete:MaskedTextBox TabIndex="4" x:Name="reservation_date" HorizontalAlignment="Left" Height="50.023" Margin="448.856,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Mask="0000-00-00">
-            <Obselete:MaskedTextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Obselete:MaskedTextBox.Resources>
-            <Obselete:MaskedTextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Obselete:MaskedTextBox.RenderTransform>
-        </Obselete:MaskedTextBox>
-        <DatePicker HorizontalAlignment="Left" Height="50.023" Margin="338.858,61.977,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
+            </DatePicker.Resources>
+        </DatePicker>
+        <DatePicker x:Name="date_out" HorizontalAlignment="Left" Height="50.023" Margin="448.856,317,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
             <DatePicker.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
