@@ -53,12 +53,6 @@ namespace WPF_HotelManagement
             continuteWindow.Show();
             this.Close();
         }
-        public void coulumnWidth()
-        {
-            string count = roomGrid.Columns.Count().ToString();
-            MessageBox.Show(count);       
-        }
-
         private void search_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
             getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "' ");

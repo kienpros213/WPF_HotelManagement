@@ -27,7 +27,7 @@ namespace WPF_HotelManagement
 
         public void getData()
         {
-            getDataGridView.bindGrid(cusGrid, "select distinct tblCustomer.customerID, tblCustomer.customerFName, tblCustomer.customerLName, tblCustomer.customerAddress, tblCustomer.customerStatus, tblReservation.reservationID, tblReservation.reservationDate, tblReservation.dateIn, tblReservation.dateOut, tblReservation.roomID from tblCustomer, tblReservation where tblCustomer.customerID = tblReservation.customerID and tblCustomer.customerStatus = 'reserved' ");
+            getDataGridView.bindGrid(cusGrid, "EXEC getCheckInData @cusStatus = 'reserved'");
         }
 
         public static string selectedItemText;
@@ -36,7 +36,6 @@ namespace WPF_HotelManagement
         {
             object selectedItem = cusGrid.SelectedItem;
             selectedItemText = (cusGrid.SelectedCells[0].Column.GetCellContent(selectedItem) as TextBlock).Text;
-
             reservationCheck reserveCheck = new reservationCheck();
             reserveCheck.Show();
         }

@@ -43,63 +43,37 @@ namespace WPF_HotelManagement
         }
         private void getClassAndPrice()
         {
-            //fill textBox
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            paymentMethod.getClass(_roomID, roomClass, price, cusID, daysRange);
-            paymentMethod.getDaysRange(cusID, daysRange);
-            int priceValue = int.Parse(price.Text);
-            int daysRangeValue = int.Parse(daysRange.Text);
-            int result = priceValue * daysRangeValue + int.Parse(breakfast.Text) * 100 + int.Parse(carRenting.Text) * 200 + int.Parse(massage.Text) * 150 + int.Parse(cleaning.Text) * 100;
-            total.Text = result.ToString();
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
         }
 
         private void breakfast_LostFocus(object sender, RoutedEventArgs e)
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            paymentMethod.getClass(_roomID, roomClass, price, cusID, daysRange);
-            paymentMethod.getDaysRange(cusID, daysRange);
-            int priceValue = int.Parse(price.Text);
-            int daysRangeValue = int.Parse(daysRange.Text);
-            int result = priceValue * daysRangeValue + int.Parse(breakfast.Text) * 100 + int.Parse(carRenting.Text) * 200 + int.Parse(massage.Text) * 150 + int.Parse(cleaning.Text) * 100;
-            total.Text = result.ToString();
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
         }
 
         private void cleaning_LostFocus(object sender, RoutedEventArgs e)
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            paymentMethod.getClass(_roomID, roomClass, price, cusID, daysRange);
-            paymentMethod.getDaysRange(cusID, daysRange);
-            int priceValue = int.Parse(price.Text);
-            int daysRangeValue = int.Parse(daysRange.Text);
-            int result = priceValue * daysRangeValue + int.Parse(breakfast.Text) * 100 + int.Parse(carRenting.Text) * 200 + int.Parse(massage.Text) * 150 + int.Parse(cleaning.Text) * 100;
-            total.Text = result.ToString();
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
         }
 
         private void carRenting_LostFocus(object sender, RoutedEventArgs e)
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            paymentMethod.getClass(_roomID, roomClass, price, cusID, daysRange);
-            paymentMethod.getDaysRange(cusID, daysRange);
-            int priceValue = int.Parse(price.Text);
-            int daysRangeValue = int.Parse(daysRange.Text);
-            int result = priceValue * daysRangeValue + int.Parse(breakfast.Text) * 100 + int.Parse(carRenting.Text) * 200 + int.Parse(massage.Text) * 150 + int.Parse(cleaning.Text) * 100;
-            total.Text = result.ToString();
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
         }
 
         private void massage_LostFocus(object sender, RoutedEventArgs e)
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            paymentMethod.getClass(_roomID, roomClass, price, cusID, daysRange);
-            paymentMethod.getDaysRange(cusID, daysRange);
-            int priceValue = int.Parse(price.Text);
-            int daysRangeValue = int.Parse(daysRange.Text);
-            int result = priceValue * daysRangeValue + int.Parse(breakfast.Text) * 100 + int.Parse(carRenting.Text) * 200 + int.Parse(massage.Text) * 150 + int.Parse(cleaning.Text) * 100;
-            total.Text = result.ToString();
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
         }
     }
 }
