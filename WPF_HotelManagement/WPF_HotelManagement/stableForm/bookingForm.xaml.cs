@@ -61,22 +61,13 @@ namespace WPF_HotelManagement
 
         private void search_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (date_in.Text == "____-__-__" || date_out.Text == "____-__-__")
-            {
-                getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom");
-            }
-            else
-                getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "' ");
+            getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "' ");
         }
 
         private void choose_room_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (date_in.Text == "____-__-__"|| date_out.Text == "____-__-__")
-            {
-                getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom");
-            }
-            else
-                getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "' ");
+            getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "' ");
         }
+
     }
 }

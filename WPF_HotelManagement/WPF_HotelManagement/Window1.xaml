@@ -7,8 +7,6 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="106.679,168.145,0,0" VerticalAlignment="Top" Width="210.223"/>
-        <Rectangle Fill="#FF2F2FC1" HorizontalAlignment="Left" Height="24.667" Margin="96.667,224.333,0,0" Stroke="Black" VerticalAlignment="Top" Width="104" MouseDown="Rectangle_MouseDown"/>
-
+        
     </Grid>
 </Window>

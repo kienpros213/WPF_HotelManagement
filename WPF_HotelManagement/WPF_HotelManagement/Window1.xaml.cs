@@ -23,12 +23,5 @@ namespace WPF_HotelManagement
         {
             InitializeComponent();
         }
-
-        private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            DateTime date = Convert.ToDateTime(datePicker.Text);
-            string date2 = date.ToString("dd/MM/yyyy");
-            MessageBox.Show(date2);
-        }
     }
 }

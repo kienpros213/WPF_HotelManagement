@@ -140,7 +140,7 @@
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="room_id">
                 <EasingDoubleKeyFrame KeyTime="0" Value="350"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="158">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="170">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -401,6 +401,86 @@
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="comfirm_layer">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-113.316">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reservation_date">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-806">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reservation_date">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-4">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="reservation_date">
+                <EasingThicknessKeyFrame KeyTime="0" Value="448.856,116,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="448.856,117,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="date_out">
+                <EasingThicknessKeyFrame KeyTime="0" Value="448.856,317,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="449.2,117,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="date_out">
+                <EasingDoubleKeyFrame KeyTime="0" Value="350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="170">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="date_out">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="118.666">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="date_out">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-0.665">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="date_in">
+                <EasingThicknessKeyFrame KeyTime="0" Value="448.856,217,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="100,117,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="date_in">
+                <EasingDoubleKeyFrame KeyTime="0" Value="350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="170">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="date_in">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="32">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <QuarticEase EasingMode="EaseOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -814,6 +894,126 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="date_out">
+                <EasingThicknessKeyFrame KeyTime="0" Value="449.2,117,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="448.856,317,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="date_out">
+                <EasingDoubleKeyFrame KeyTime="0" Value="170">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="350">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="date_out">
+                <EasingDoubleKeyFrame KeyTime="0" Value="118.666">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="date_out">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-0.665">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reservation_date">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-806">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reservation_date">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-4">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="reservation_date">
+                <EasingThicknessKeyFrame KeyTime="0" Value="448.856,117,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="448.856,116,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="date_in">
+                <EasingThicknessKeyFrame KeyTime="0" Value="100,117,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="448.856,217,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="date_in">
+                <EasingDoubleKeyFrame KeyTime="0" Value="170">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="350">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="date_in">
+                <EasingDoubleKeyFrame KeyTime="0" Value="32">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="singleRoom">
             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="single_room">
@@ -940,9 +1140,6 @@
         <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="choose_room_top_layer">
             <BeginStoryboard Storyboard="{StaticResource transtion}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="customer_top_layer">
-            <BeginStoryboard x:Name="transtion_reverse_BeginStoryboard" Storyboard="{StaticResource transtion_reverse}"/>
-        </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="single_room_layer">
             <BeginStoryboard Storyboard="{StaticResource singleRoom}"/>
         </EventTrigger>
@@ -968,7 +1165,7 @@
             <BeginStoryboard x:Name="chooseRoom_BeginStoryboard" Storyboard="{StaticResource chooseRoom}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="customer_top_layer">
-            <BeginStoryboard x:Name="customerInfo_BeginStoryboard" Storyboard="{StaticResource customerInfo}"/>
+            <BeginStoryboard x:Name="transtion_reverse_BeginStoryboard" Storyboard="{StaticResource transtion_reverse}"/>
         </EventTrigger>
     </Window.Triggers>
     <Grid Margin="0,0,-916,-379.55">
@@ -1383,7 +1580,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle x:Name="suite_room_layer" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Margin="74.442,294,0,0" Stroke="Black" VerticalAlignment="Top" Width="181.144" Opacity="0" RenderTransformOrigin="0.5,0.5" MouseDown="suite_room_layer_MouseDown" Grid.Row="2">
+        <Rectangle x:Name="suite_room_layer" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Margin="74.442,294,0,0" Stroke="Black" VerticalAlignment="Top" Width="181.144" Opacity="0" RenderTransformOrigin="0.5,0.5" MouseDown="suite_room_layer_MouseDown" Grid.Row="2" d:IsLocked="True">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -1399,13 +1596,14 @@
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
             </DatePicker.Resources>
-        </DatePicker>
-        <DatePicker x:Name="date_in" HorizontalAlignment="Left" Height="50.023" Margin="448.858,215.23,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
-            <DatePicker.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </DatePicker.Resources>
+            <DatePicker.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DatePicker.RenderTransform>
         </DatePicker>
         <DatePicker x:Name="date_out" HorizontalAlignment="Left" Height="50.023" Margin="448.856,317,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
             <DatePicker.Resources>
@@ -1413,6 +1611,29 @@
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
             </DatePicker.Resources>
+            <DatePicker.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DatePicker.RenderTransform>
+        </DatePicker>
+        <DatePicker x:Name="date_in" HorizontalAlignment="Left" Height="50.023" Margin="448.856,217,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
+            <DatePicker.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </DatePicker.Resources>
+            <DatePicker.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DatePicker.RenderTransform>
         </DatePicker>
     </Grid>
 </Window>

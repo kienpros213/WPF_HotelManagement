@@ -40,9 +40,6 @@ namespace WPF_HotelManagement
             if (isOpen == false)
             {
                 bookingForm _bookingForm = new bookingForm();
-                //continute _customerForm = new continute();
-                //occupiedRoom _customerForm = new occupiedRoom();
-                //occupiedRoom _customerForm = new occupiedRoom();
                 _bookingForm.Show();
             }
         }
