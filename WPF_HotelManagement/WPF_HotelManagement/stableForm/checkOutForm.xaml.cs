@@ -27,7 +27,7 @@ namespace WPF_HotelManagement
 
         public void getData()
         {
-            getDataGridView.bindGrid(cusGrid, "select distinct tblCustomer.customerID, tblCustomer.customerFName, tblCustomer.customerLName, tblCustomer.customerAddress, tblCustomer.customerStatus, tblReservation.reservationID, tblReservation.reservationDate, tblReservation.dateIn, tblReservation.dateOut, tblReservation.roomID from tblCustomer, tblReservation where tblCustomer.customerID = tblReservation.customerID and tblCustomer.customerStatus = 'checked' ");
+            getDataGridView.bindGrid(cusGrid, "EXEC getCheckOutData");
         }
 
         public static string selectedItemText;

@@ -27,7 +27,7 @@ namespace WPF_HotelManagement
 
         public void getData()
         {
-            getDataGridView.bindGrid(cusGrid, "EXEC getCheckInData @cusStatus = 'reserved'");
+            getDataGridView.bindGrid(cusGrid, "EXEC getCheckInData");
         }
 
         public static string selectedItemText;

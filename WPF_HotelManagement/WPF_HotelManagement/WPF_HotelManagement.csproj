@@ -70,6 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="class\count.cs" />
     <Compile Include="stableForm\bookingForm.xaml.cs">
       <DependentUpon>bookingForm.xaml</DependentUpon>
     </Compile>
