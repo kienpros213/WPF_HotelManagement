@@ -22,7 +22,6 @@ namespace WPF_HotelManagement
         public bookingForm()
         {
             InitializeComponent();
-            //getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "'");
             reservation_date.Text = DateTime.Now.ToString();
         }
 
@@ -55,12 +54,12 @@ namespace WPF_HotelManagement
         }
         private void search_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "' ");
+            getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "' ");
         }
 
         private void choose_room_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "', @dateOut = '" + date_out.Text + "' ");
+            getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "' ");
         }
 
     }

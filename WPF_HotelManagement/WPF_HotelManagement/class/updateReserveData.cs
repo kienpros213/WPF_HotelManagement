@@ -35,5 +35,15 @@ namespace WPF_HotelManagement
             command.ExecuteNonQuery();
             con.Close();
         }
+        
+        public static void updateService(string cusID, string serviceID, string amount)
+        {
+            string sqlstring = "insert into tblOrder values ("+cusID+ ", " + serviceID + ", " + amount + ")";
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
+            con.Open();
+            SqlCommand command = new SqlCommand(sqlstring, con);
+            command.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }
