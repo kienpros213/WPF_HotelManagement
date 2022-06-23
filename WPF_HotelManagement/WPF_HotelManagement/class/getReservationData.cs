@@ -1,9 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Windows;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
 namespace WPF_HotelManagement
 {
@@ -30,6 +26,41 @@ namespace WPF_HotelManagement
                 _cusStatus.Text = dataReader.GetValue(9).ToString();
             }
             con.Close();
+        }
+        public static void getServiceData(string cusID, System.Windows.Controls.TextBox breakfast, System.Windows.Controls.TextBox cleaning, System.Windows.Controls.TextBox carRenting, System.Windows.Controls.TextBox massage)
+        {
+            string sqlstring = "EXEC getServices @cusID = "+cusID+"";
+            string constring = "Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True";
+            using (SqlConnection con = new SqlConnection(constring))
+            {
+                SqlCommand command = new SqlCommand(sqlstring, con);
+                SqlDataAdapter sda = new SqlDataAdapter(command);
+                DataTable dt = new DataTable("view");
+                sda.Fill(dt);
+                int rowCount = dt.Rows.Count;
+                if (rowCount == 1)
+                {
+                    breakfast.Text = dt.Rows[0]["amount"].ToString();
+                }
+                if (rowCount == 2)
+                {
+                    breakfast.Text = dt.Rows[0]["amount"].ToString();
+                    cleaning.Text = dt.Rows[1]["amount"].ToString();
+                }
+                if (rowCount == 3)
+                {
+                    breakfast.Text = dt.Rows[0]["amount"].ToString();
+                    cleaning.Text = dt.Rows[1]["amount"].ToString();
+                    carRenting.Text = dt.Rows[2]["amount"].ToString();
+                }
+                if (rowCount == 4)
+                {
+                    breakfast.Text = dt.Rows[0]["amount"].ToString();
+                    cleaning.Text = dt.Rows[1]["amount"].ToString();
+                    carRenting.Text = dt.Rows[2]["amount"].ToString();
+                    massage.Text = dt.Rows[3]["amount"].ToString();
+                }
+            }
         }
     }
 }

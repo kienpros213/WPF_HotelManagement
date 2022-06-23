@@ -24,6 +24,7 @@ namespace WPF_HotelManagement
             InitializeComponent();
             getReserveData();
             getClassAndPrice();
+            getReservationData.getServiceData(idPar, breakfast, cleaning, carRenting, massage);
         }
         string idPar = checkOutForm.selectedItemText;
 
@@ -43,10 +44,6 @@ namespace WPF_HotelManagement
         }
         private void getClassAndPrice()
         {
-            //fill textBox
-            string _roomID = roomId.Text;
-            string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
         }
     }
 }
