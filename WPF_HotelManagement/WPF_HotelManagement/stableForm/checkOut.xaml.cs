@@ -45,12 +45,8 @@ namespace WPF_HotelManagement
         private void getClassAndPrice()
         {
             string _roomID = roomId.Text;
-            payment.getClassAndPrice(_roomID, roomClass, price, _cusID, daysRange);
-            payment.getDaysRange(_cusID, daysRange);
-            int priceValue = int.Parse(price.Text);
-            int daysRangeValue = int.Parse(daysRange.Text);
-            int result = priceValue * daysRangeValue + int.Parse(breakfast.Text) * 100 + int.Parse(carRenting.Text) * 200 + int.Parse(massage.Text) * 150 + int.Parse(cleaning.Text) * 100;
-            total.Text = result.ToString();
+            string cusID = customerId.Text;
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
         }
     }
 }
