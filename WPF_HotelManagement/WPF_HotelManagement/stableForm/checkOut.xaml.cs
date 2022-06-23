@@ -23,14 +23,14 @@ namespace WPF_HotelManagement
         {
             InitializeComponent();
             getReserveData();
+            getReservationData.getServiceData(_cusID, breakfast, cleaning, carRenting, massage);
             getClassAndPrice();
-            getReservationData.getServiceData(idPar, breakfast, cleaning, carRenting, massage);
         }
-        string idPar = checkOutForm.selectedItemText;
+        string _cusID = checkOutForm.selectedItemText;
 
         private void getReserveData()
         {
-            getReservationData.getData(idPar, customerId, reservationId, roomId, reservationDate, dateIn, dateOut, foreName, lastName, customerAddress, customerStatus);
+            getReservationData.getData(_cusID, customerId, reservationId, roomId, reservationDate, dateIn, dateOut, foreName, lastName, customerAddress, customerStatus);
         }
 
         private void check_out_top_MouseDown(object sender, MouseButtonEventArgs e)
@@ -44,6 +44,13 @@ namespace WPF_HotelManagement
         }
         private void getClassAndPrice()
         {
+            string _roomID = roomId.Text;
+            payment.getClassAndPrice(_roomID, roomClass, price, _cusID, daysRange);
+            payment.getDaysRange(_cusID, daysRange);
+            int priceValue = int.Parse(price.Text);
+            int daysRangeValue = int.Parse(daysRange.Text);
+            int result = priceValue * daysRangeValue + int.Parse(breakfast.Text) * 100 + int.Parse(carRenting.Text) * 200 + int.Parse(massage.Text) * 150 + int.Parse(cleaning.Text) * 100;
+            total.Text = result.ToString();
         }
     }
 }

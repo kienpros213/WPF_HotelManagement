@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace WPF_HotelManagement
 {
-    class paymentMethod
+    class payment
     {
 
         public static void getClassAndPrice(string _roomID, System.Windows.Controls.TextBox _classID, System.Windows.Controls.TextBox _price, string _cusID, System.Windows.Controls.TextBox _dayRange)

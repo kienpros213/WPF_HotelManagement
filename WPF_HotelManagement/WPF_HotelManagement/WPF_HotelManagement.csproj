@@ -84,7 +84,7 @@
     <Compile Include="stableForm\checkInForm.xaml.cs">
       <DependentUpon>checkInForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="class\paymentMethod.cs" />
+    <Compile Include="class\payment.cs" />
     <Compile Include="class\searchRoom.cs" />
     <Compile Include="stableForm\continute.xaml.cs">
       <DependentUpon>continute.xaml</DependentUpon>
