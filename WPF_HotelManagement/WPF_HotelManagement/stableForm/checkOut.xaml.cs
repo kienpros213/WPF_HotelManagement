@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WPF_HotelManagement
 {
@@ -39,6 +28,7 @@ namespace WPF_HotelManagement
             string _roomID = roomId.Text;
             string _cusID = customerId.Text;
             updateReserveData.returnRoom(_roomID, _cusID);
+            updateTransaction.Update(_cusID, 1, total, "visa", "02/02/2022");
             MessageBox.Show("check-out success");
             this.Close();
         }

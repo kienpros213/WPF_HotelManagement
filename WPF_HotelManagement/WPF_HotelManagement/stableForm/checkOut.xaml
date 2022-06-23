@@ -649,8 +649,8 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Rectangle Fill="#FFF5A38E" HorizontalAlignment="Left" Height="192.193" Margin="846,439.143,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
-        <Label x:Name="label_pay_method" Content="Pay Method:" HorizontalAlignment="Left" Margin="865.31,464.837,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
-        <TextBox x:Name="payMethod" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1024.24,458.067,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
+        <Label x:Name="label_pay_method" Content="Pay Method:" HorizontalAlignment="Left" Margin="1001.07,460.837,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <TextBox x:Name="payMethod" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1160,454.067,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -665,8 +665,8 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="label_discount" Content="Discount:" HorizontalAlignment="Left" Margin="898.67,519.859,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
-        <TextBox x:Name="discount" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1024.24,513.09,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
+        <Label x:Name="label_discount" Content="Discount:" HorizontalAlignment="Left" Margin="1034.43,515.859,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <TextBox x:Name="discount" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1160,509.09,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -681,8 +681,8 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="label_total" Content="Total:" HorizontalAlignment="Left" Margin="928.85,568.113,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FF4E3C3C"/>
-        <TextBox x:Name="total" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1024.24,568.113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
+        <Label x:Name="label_total" Content="Total:" HorizontalAlignment="Left" Margin="1064.61,564.113,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FF4E3C3C"/>
+        <TextBox x:Name="total" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1160,564.113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
