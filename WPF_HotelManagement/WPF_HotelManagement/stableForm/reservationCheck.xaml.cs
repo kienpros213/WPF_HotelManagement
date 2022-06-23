@@ -27,10 +27,7 @@ namespace WPF_HotelManagement
             string _roomID = roomId.Text;
             string _cusID = customerId.Text;
             updateReserveData.takeRoom(_roomID, _cusID);
-            checkServiceInput.Check(_cusID, "1", breakfast);
-            checkServiceInput.Check(_cusID, "2", cleaning);
-            checkServiceInput.Check(_cusID, "3", carRenting);
-            checkServiceInput.Check(_cusID, "4", massage);
+            checkServiceInput.Check(_cusID, breakfast, cleaning, carRenting, massage);
             MessageBox.Show("check-in success");
             this.Close();
         }
@@ -68,5 +65,7 @@ namespace WPF_HotelManagement
             string cusID = customerId.Text;
             count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
         }
+
+
     }
 }

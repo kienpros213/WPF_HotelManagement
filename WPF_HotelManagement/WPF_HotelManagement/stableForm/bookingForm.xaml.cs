@@ -61,6 +61,5 @@ namespace WPF_HotelManagement
         {
             getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "' ");
         }
-
     }
 }

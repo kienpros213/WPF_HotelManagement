@@ -11,7 +11,7 @@ namespace WPF_HotelManagement
     {
         public static void getData(string _cusIDPar, System.Windows.Controls.TextBox _cusID, System.Windows.Controls.TextBox _reservationID, System.Windows.Controls.TextBox _roomID, System.Windows.Controls.TextBox _reserveDate, System.Windows.Controls.TextBox _dateIn, System.Windows.Controls.TextBox _dateOut, System.Windows.Controls.TextBox _cusFName, System.Windows.Controls.TextBox _cusLName, System.Windows.Controls.TextBox _cusAddress, System.Windows.Controls.TextBox _cusStatus)
         {
-            string sqlstring = "exec viewProc @par = '" + _cusIDPar+"' ";
+            string sqlstring = "EXEC viewProc @par = '" + _cusIDPar+"' ";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             SqlCommand command = new SqlCommand(sqlstring, con);
             con.Open();

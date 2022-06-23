@@ -8,7 +8,7 @@ namespace WPF_HotelManagement
     {
         public static void Update(string fName, string lName, string address, string status, string roomID, string reserveDate, string dateIn, string dateOut)
         {
-            string sqlstring = "exec updateCustomerReservation @fName = '"+fName+ "', @lName = '" + lName + "', @address = '" + address + "', @status = '" + status + "', @roomID = '" + roomID + "', @reservationDate = '" + reserveDate + "', @dateIn = '" + dateIn + "', @dateOut = '" + dateOut + "'";
+            string sqlstring = "EXEC updateCustomerReservation @fName = '"+fName+ "', @lName = '" + lName + "', @address = '" + address + "', @status = '" + status + "', @roomID = '" + roomID + "', @reservationDate = '" + reserveDate + "', @dateIn = '" + dateIn + "', @dateOut = '" + dateOut + "'";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
@@ -19,7 +19,7 @@ namespace WPF_HotelManagement
 
         public static void takeRoom(string _roomID, string _cusID)
         {
-            string sqlstring = "UPDATE tblRoom SET roomStatus = 'occupied' WHERE roomID = '" + _roomID + "' UPDATE tblCustomer SET customerStatus = 'checked' WHERE customerID = '" + _cusID + "' ";
+            string sqlstring = "EXEC returnRoom @roomID = " + _roomID + ", @cusID = " + _cusID + " ";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
@@ -28,7 +28,7 @@ namespace WPF_HotelManagement
         }
         public static void returnRoom (string _roomID, string _cusID)
         {
-            string sqlstring = "UPDATE tblRoom SET roomStatus = 'unoccupied' WHERE roomID = '" + _roomID + "' UPDATE tblCustomer SET customerStatus = 'checked-out' WHERE customerID = '" + _cusID + "' ";
+            string sqlstring = "EXEC returnRoom @roomID = " + _roomID + ", @cusID = " + _cusID + " ";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
@@ -38,7 +38,7 @@ namespace WPF_HotelManagement
         
         public static void updateService(string cusID, string serviceID, string amount)
         {
-            string sqlstring = "insert into tblOrder values ("+cusID+ ", " + serviceID + ", " + amount + ")";
+            string sqlstring = "INSERT INTO tblOrder VALUES ("+cusID+ ", " + serviceID + ", " + amount + ")";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
