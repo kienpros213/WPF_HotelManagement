@@ -157,7 +157,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Rectangle x:Name="choose_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="278.5,324.832,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="del_employee" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="138.265,323.286,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -167,7 +167,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Label x:Name="label_choose_room" Content="DELETE EMPLOYEE" HorizontalAlignment="Left" Margin="281.951,337.199,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" RenderTransformOrigin="-0.822,-3.797">
+        <Label x:Name="del_employee_label" Content="DELETE" HorizontalAlignment="Left" Margin="208.185,337.198,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" RenderTransformOrigin="-0.822,-3.797">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -177,7 +177,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Rectangle x:Name="choose_room_layer" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Margin="278.5,324.832,0,0" Stroke="Black" VerticalAlignment="Top" Width="0" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="del_employee_layer" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Margin="138.265,323.286,0,0" Stroke="Black" VerticalAlignment="Top" Width="0" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -187,7 +187,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle x:Name="choose_room_top_layer" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="278.5,324.832,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" Opacity="0" RenderTransformOrigin="0.5,0.5" MouseDown="choose_room_top_layer_MouseDown">
+        <Rectangle x:Name="del_employee_top_layer" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="138.265,323.286,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" Opacity="0" RenderTransformOrigin="0.5,0.5" MouseDown="choose_room_top_layer_MouseDown">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -197,6 +197,46 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
+        <Rectangle x:Name="update_employee" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="415.65,323.286,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="update_employee_layer" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Margin="415.65,323.286,0,0" Stroke="Black" VerticalAlignment="Top" Width="0" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="update_employee_top_layer" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="415.65,323.286,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" Opacity="0" RenderTransformOrigin="0.5,0.5" MouseDown="update_employee_top_layer_MouseDown">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label x:Name="update_employee_label" Content="UPDATE" HorizontalAlignment="Left" Margin="480.932,337.198,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" RenderTransformOrigin="-0.822,-3.797" Width="113.6">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
 
     </Grid>
 </Window>

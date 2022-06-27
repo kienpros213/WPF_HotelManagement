@@ -35,5 +35,11 @@ namespace WPF_HotelManagement
             EmployeeDelForm _employeeForm = new EmployeeDelForm();
             _employeeForm.Show();
         }
+
+        private void choose_room_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            EmployeeForm _employeeForm = new EmployeeForm();
+            _employeeForm.Show();
+        }
     }
 }

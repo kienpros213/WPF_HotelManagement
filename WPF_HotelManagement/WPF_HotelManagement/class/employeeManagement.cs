@@ -30,12 +30,12 @@ namespace WPF_HotelManagement
             SqlDataReader dataReader = command.ExecuteReader();
             if (dataReader.Read())
             {
-                foreName.Text = dataReader.GetValue(0).ToString();
-                lastName.Text = dataReader.GetValue(1).ToString();
-                job.Text = dataReader.GetValue(2).ToString();
-                address.Text = dataReader.GetValue(3).ToString();
-                username.Text = dataReader.GetValue(4).ToString();
-                password.Text = dataReader.GetValue(5).ToString();
+                foreName.Text = dataReader.GetValue(1).ToString();
+                lastName.Text = dataReader.GetValue(2).ToString();
+                job.Text = dataReader.GetValue(3).ToString();
+                address.Text = dataReader.GetValue(4).ToString();
+                username.Text = dataReader.GetValue(5).ToString();
+                password.Text = dataReader.GetValue(6).ToString();
             }
             con.Close();
         }
@@ -43,6 +43,17 @@ namespace WPF_HotelManagement
         public static void Delete(string employeeID)
         {
             string sqlstring = "DELETE FROM tblEmployees WHERE employeeID = "+employeeID+"";
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
+            con.Open();
+            SqlCommand command = new SqlCommand(sqlstring, con);
+            command.ExecuteNonQuery();
+            MessageBox.Show("Employee Updated");
+            con.Close();
+        }
+
+        public static void Update(string employeeID, string fName, string lName, string job, string address, string username, string password)
+        {
+            string sqlstring = "EXEC EmployeeUpdate @employeeID = "+employeeID+ ", @fName = " + fName + ", @lName = " + lName + ", @job = " + job + ", @address = " + address + ", @username = " + username + ", @password = " + password + "  ";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);

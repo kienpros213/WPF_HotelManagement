@@ -32,5 +32,11 @@ namespace WPF_HotelManagement
             employeeManagement.Delete(_employeeID);
             this.Close();
         }
+
+        private void update_employee_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            employeeManagement.Update(_employeeID, foreName.Text, lastName.Text, jobDepartment.Text, address.Text, username.Text, password.Text);
+            MessageBox.Show("updated new data");
+        }
     }
 }
