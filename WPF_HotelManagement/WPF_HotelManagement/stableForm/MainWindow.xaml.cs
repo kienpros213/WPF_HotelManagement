@@ -49,5 +49,11 @@ namespace WPF_HotelManagement
             checkInForm _checkInForm = new checkInForm();
             _checkInForm.Show();
         }
+
+        private void employee_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            EmployeeList _employeeForm = new EmployeeList();
+            _employeeForm.Show();
+        }
     }
 }

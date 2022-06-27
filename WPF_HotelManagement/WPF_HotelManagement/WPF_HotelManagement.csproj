@@ -72,7 +72,17 @@
     </ApplicationDefinition>
     <Compile Include="class\checkServiceInput.cs" />
     <Compile Include="class\count.cs" />
+    <Compile Include="class\employeeManagement.cs" />
     <Compile Include="class\updateTransaction.cs" />
+    <Compile Include="stableForm\EmployeeDelForm.xaml.cs">
+      <DependentUpon>EmployeeDelForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stableForm\EmployeeList.xaml.cs">
+      <DependentUpon>EmployeeList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stableForm\EmployeeForm.xaml.cs">
+      <DependentUpon>EmployeeForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="occupiedRoom.xaml.cs">
       <DependentUpon>occupiedRoom.xaml</DependentUpon>
     </Compile>
@@ -102,6 +112,18 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="stableForm\EmployeeDelForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stableForm\EmployeeList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stableForm\EmployeeForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="occupiedRoom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

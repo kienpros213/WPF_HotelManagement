@@ -22,14 +22,8 @@ namespace WPF_HotelManagement
         public checkOutForm()
         {
             InitializeComponent();
-            getData();
-        }
-
-        public void getData()
-        {
             getDataGridView.bindGrid(cusGrid, "EXEC getCheckOutData");
         }
-
         public static string selectedItemText;
 
         private void cusGrid_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)

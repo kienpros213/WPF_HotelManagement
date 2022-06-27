@@ -11,22 +11,16 @@ namespace WPF_HotelManagement
         public checkOut()
         {
             InitializeComponent();
-            getReserveData();
+            getReservationData.getData(_cusID, customerId, reservationId, roomId, reservationDate, dateIn, dateOut, foreName, lastName, customerAddress, customerStatus);
             getReservationData.getServiceData(_cusID, breakfast, cleaning, carRenting, massage);
             getClassAndPrice();
         }
         string _cusID = checkOutForm.selectedItemText;
 
-        private void getReserveData()
-        {
-            getReservationData.getData(_cusID, customerId, reservationId, roomId, reservationDate, dateIn, dateOut, foreName, lastName, customerAddress, customerStatus);
-        }
-
         private void check_out_top_MouseDown(object sender, MouseButtonEventArgs e)
         {
             //check-out button
             string _roomID = roomId.Text;
-            string _cusID = customerId.Text;
             updateReserveData.returnRoom(_roomID, _cusID);
             updateTransaction.Update(_cusID, 1, total, "visa", "02/02/2022");
             MessageBox.Show("check-out success");

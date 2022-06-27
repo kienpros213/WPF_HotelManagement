@@ -36,7 +36,7 @@
             </ColorAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="reportEasing">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="report_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="employee_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:0.5" Value="44">
                     <EasingDoubleKeyFrame.EasingFunction>
@@ -44,7 +44,7 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="report_layer">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="employee_layer">
                 <EasingColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
                 <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF88C0C3"/>
             </ColorAnimationUsingKeyFrames>
@@ -100,7 +100,7 @@
             </ColorAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="reportEasingReverse">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="report_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="employee_layer" Storyboard.TargetProperty="(FrameworkElement.Height)">
                 <SplineDoubleKeyFrame KeyTime="0" Value="44"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
                     <EasingDoubleKeyFrame.EasingFunction>
@@ -108,7 +108,7 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="report_layer">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="employee_layer">
                 <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
                 <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF88C0C3">
                     <EasingColorKeyFrame.EasingFunction>
@@ -170,10 +170,10 @@
         <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="booking_top_layer">
             <BeginStoryboard x:Name="bookingEasingReverse_BeginStoryboard" Storyboard="{StaticResource bookingEasingReverse}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="report_top_layer">
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="employee_top_layer">
             <BeginStoryboard x:Name="reportEasing_BeginStoryboard" Storyboard="{StaticResource reportEasing}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="report_top_layer">
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="employee_top_layer">
             <BeginStoryboard x:Name="reportEasingReverse_BeginStoryboard" Storyboard="{StaticResource reportEasingReverse}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="occupied_top_layer">
@@ -204,10 +204,10 @@
         <Rectangle x:Name="booking_layer" Fill="White" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Label Content="BOOKING" HorizontalAlignment="Left" Margin="787,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Rectangle x:Name="booking_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0" MouseDown="booking_top_layer_MouseDown"/>
-        <Rectangle x:Name="report" Fill="White" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138"/>
-        <Rectangle x:Name="report_layer" Fill="White" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138"/>
-        <Label Content="REPORT" HorizontalAlignment="Left" Margin="928.5,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Rectangle x:Name="report_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0"/>
+        <Rectangle x:Name="employee" Fill="White" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138"/>
+        <Rectangle x:Name="employee_layer" Fill="White" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="___Label___employee_" Content="EMPLOYEE" HorizontalAlignment="Left" Margin="918.5,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Rectangle x:Name="employee_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="883,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0" MouseDown="employee_top_layer_MouseDown"/>
         <Rectangle x:Name="occupied" Fill="White" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Rectangle x:Name="occupied_layer" Fill="White" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Label Content="CHECK OUT" HorizontalAlignment="Left" Margin="1051.666,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>

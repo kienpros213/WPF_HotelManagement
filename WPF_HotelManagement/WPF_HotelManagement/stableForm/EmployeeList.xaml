@@ -1,0 +1,53 @@
+﻿<Window x:Class="WPF_HotelManagement.EmployeeList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_HotelManagement"
+        mc:Ignorable="d"
+        Title="EmployeeList" Height="450" Width="517.01">
+    <Grid>
+        <DataGrid x:Name="employeeList" HorizontalAlignment="Left" Height="297.66" Margin="0,10,-3.093,0" VerticalAlignment="Top" Width="512.103" SelectedCellsChanged="employeeList_SelectedCellsChanged"/>
+        <Rectangle x:Name="choose_room" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="136.5,339,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label x:Name="label_choose_room" Content="ADD EMPLOYEE" HorizontalAlignment="Left" Margin="156.456,353.745,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C" RenderTransformOrigin="-0.822,-3.797">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Rectangle x:Name="choose_room_layer" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Margin="136.5,339,0,0" Stroke="Black" VerticalAlignment="Top" Width="0" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="choose_room_top_layer" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="136.5,339,0,0" Stroke="Black" VerticalAlignment="Top" Width="236.115" Opacity="0" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+    </Grid>
+</Window>
