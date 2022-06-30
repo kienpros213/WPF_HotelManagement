@@ -8,33 +8,26 @@ namespace WPF_HotelManagement
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(string username)
         {
             InitializeComponent();
+            userNameBox.Text = username;
+    }
+
+        public string GetUser()
+        {
+            return userNameBox.Text;
         }
 
         private void booking_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            bool isOpen = false;
-            foreach (Window f in Application.Current.Windows)
-            {
-                if (f.Name == "customerForm")
-                {
-                    isOpen = true;
-                    break;
-                }
-            }
-
-            if (isOpen == false)
-            {
-                bookingForm _bookingForm = new bookingForm();
+                bookingForm _bookingForm = new bookingForm(userNameBox.Text);
                 _bookingForm.Show();
-            }
         }
 
         private void occupied_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            checkOutForm checkOutForm = new checkOutForm();
+            checkOutForm checkOutForm = new checkOutForm(userNameBox.Text);
             checkOutForm.Show();
         }
 
@@ -42,6 +35,7 @@ namespace WPF_HotelManagement
         {
             login _login = new login();
             _login.Show();
+            this.Close();
         }
 
         private void check_in_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
@@ -54,6 +48,13 @@ namespace WPF_HotelManagement
         {
             EmployeeList _employeeForm = new EmployeeList();
             _employeeForm.Show();
+        }
+
+        private void home_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            login _login = new login();
+            _login.Show();
+            this.Close();
         }
     }
 }

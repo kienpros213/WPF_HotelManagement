@@ -650,7 +650,7 @@
         </TextBox>
         <Rectangle Fill="#FFF5A38E" HorizontalAlignment="Left" Height="192.193" Margin="846,439.143,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
         <Label x:Name="label_pay_method" Content="Pay Method:" HorizontalAlignment="Left" Margin="1001.07,460.837,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
-        <TextBox x:Name="payMethod" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1160,454.067,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
+        <TextBox x:Name="payMethod" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1723,490.495,-399,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -761,5 +761,31 @@
         <Label x:Name="label_fore_name_Copy1" Content="Breakfast :" HorizontalAlignment="Left" Margin="877.5,144.549,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <Label x:Name="label_fore_name_Copy2" Content="Cleaning :" HorizontalAlignment="Left" Margin="1283.5,144.97,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <Label x:Name="Massage" Content="Massage :" HorizontalAlignment="Left" Margin="1283.5,244.97,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_reserve_id_Copy" Content="Username :" HorizontalAlignment="Left" Margin="10.728,10,0,0" VerticalAlignment="Top" Foreground="#FF4E3C3C" FontWeight="Bold"/>
+        <TextBox IsReadOnly="true" x:Name="userNameBox" HorizontalAlignment="Left" Height="25.96" Margin="88.721,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129.818" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" BorderBrush="#FF4F4F4F" Padding="1" BorderThickness="2" IsReadOnlyCaretVisible="True">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <ComboBox x:Name="payMethod1" HorizontalAlignment="Left" Height="50.023" Margin="1160,454.067,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="1.167,-0.417" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
+            <ComboBoxItem>Cash</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">Credit Card</ComboBoxItem>
+            <ComboBoxItem>Online Banking</ComboBoxItem>
+            <ComboBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
     </Grid>
 </Window>

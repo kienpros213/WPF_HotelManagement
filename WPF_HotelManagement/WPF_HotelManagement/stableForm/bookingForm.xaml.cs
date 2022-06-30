@@ -19,11 +19,14 @@ namespace WPF_HotelManagement
     /// </summary>
     public partial class bookingForm : Window
     {
-        public bookingForm()
+        public bookingForm(string username)
         {
             InitializeComponent();
             reservation_date.Text = DateTime.Now.ToString();
+            userNameBox.Text = username;
         }
+
+        public static string username;
 
         private void single_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -50,6 +53,7 @@ namespace WPF_HotelManagement
             updateReserveData.Update(foreName.Text, lastName.Text, customerAddress.Text, customerStatus.Text, room_id.Text, reservation_date.Text, date_in.Text, date_out.Text);
             continute continuteWindow = new continute();
             continuteWindow.Show();
+            username = userNameBox.Text;
             this.Close();
         }
         private void search_layer_MouseDown(object sender, MouseButtonEventArgs e)

@@ -19,10 +19,11 @@ namespace WPF_HotelManagement
     /// </summary>
     public partial class checkOutForm : Window
     {
-        public checkOutForm()
+        public checkOutForm(string username)
         {
             InitializeComponent();
             getDataGridView.bindGrid(cusGrid, "EXEC getCheckOutData");
+            userNameBox.Text = username;
         }
         public static string selectedItemText;
 
@@ -31,7 +32,7 @@ namespace WPF_HotelManagement
             object selectedItem = cusGrid.SelectedItem;
             selectedItemText = (cusGrid.SelectedCells[0].Column.GetCellContent(selectedItem) as TextBlock).Text;
 
-            checkOut reserveCheck = new checkOut();
+            checkOut reserveCheck = new checkOut(userNameBox.Text);
             reserveCheck.Show();
         }
     }

@@ -53,7 +53,7 @@ namespace WPF_HotelManagement
 
         public static void Update(string employeeID, string fName, string lName, string job, string address, string username, string password)
         {
-            string sqlstring = "EXEC EmployeeUpdate @employeeID = "+employeeID+ ", @fName = " + fName + ", @lName = " + lName + ", @job = " + job + ", @address = " + address + ", @username = " + username + ", @password = " + password + "  ";
+            string sqlstring = "EXEC EmployeeUpdate @employeeID = " + employeeID+ ", @fName = '" + fName + "', @lName = '" + lName + "', @job = '" + job + "', @address = '" + address + "', @username = '" + username + "', @password = '" + password + "'  ";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);

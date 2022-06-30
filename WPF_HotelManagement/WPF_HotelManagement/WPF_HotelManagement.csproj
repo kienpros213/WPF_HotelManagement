@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework.Aero2" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -83,9 +84,6 @@
     <Compile Include="stableForm\EmployeeForm.xaml.cs">
       <DependentUpon>EmployeeForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="occupiedRoom.xaml.cs">
-      <DependentUpon>occupiedRoom.xaml</DependentUpon>
-    </Compile>
     <Compile Include="stableForm\bookingForm.xaml.cs">
       <DependentUpon>bookingForm.xaml</DependentUpon>
     </Compile>
@@ -109,9 +107,6 @@
     <Compile Include="stableForm\reservationCheck.xaml.cs">
       <DependentUpon>reservationCheck.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
-    </Compile>
     <Page Include="stableForm\EmployeeDelForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -121,10 +116,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="stableForm\EmployeeForm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="occupiedRoom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -168,10 +159,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="stableForm\reservationCheck.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

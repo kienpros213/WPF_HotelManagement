@@ -14,7 +14,7 @@ namespace WPF_HotelManagement
     {
         public login()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void login_layer_top_MouseDown(object sender, MouseButtonEventArgs e)
@@ -27,7 +27,7 @@ namespace WPF_HotelManagement
             if(dt.Rows.Count == 1)
             {
                 MessageBox.Show("welcum");
-                MainWindow main = new MainWindow();
+                MainWindow main = new MainWindow(userNameBox.Text);
                 main.Show();
                 this.Close();
             }

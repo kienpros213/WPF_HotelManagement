@@ -198,8 +198,8 @@
         </Image>
         <Rectangle x:Name="home" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="469,0,0,0"/>
         <Rectangle x:Name="home_layer" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="469,0,0,0"/>
-        <Label Content="HOME" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="518.5,10,0,0" FontWeight="Bold"/>
-        <Rectangle x:Name="home_top_layer" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="469,0,0,0" Fill="#FF2929A8" Opacity="0"/>
+        <Label Content="LOGOUT" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="509.5,10,0,0" FontWeight="Bold"/>
+        <Rectangle x:Name="home_top_layer" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="469,0,0,0" Fill="#FF2929A8" Opacity="0" MouseDown="home_top_layer_MouseDown"/>
         <Rectangle x:Name="booking" Fill="White" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Rectangle x:Name="booking_layer" Fill="White" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Label Content="BOOKING" HorizontalAlignment="Left" Margin="787,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
@@ -212,13 +212,25 @@
         <Rectangle x:Name="occupied_layer" Fill="White" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Label Content="CHECK OUT" HorizontalAlignment="Left" Margin="1051.666,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Rectangle x:Name="occupied_top_layer" Fill="#FF2929A8" HorizontalAlignment="Left" Height="44" Margin="1021,0,0,0" VerticalAlignment="Top" Width="138" Opacity="0" MouseDown="occupied_top_layer_MouseDown"/>
-        <Rectangle x:Name="login" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138"/>
-        <Rectangle x:Name="login_layer" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138"/>
-        <Label x:Name="label_login" Content="LOGIN" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49.5,10,0,0" FontWeight="Bold"/>
-        <Rectangle x:Name="login_top_layer" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Fill="#FF2929A8" Opacity="0" MouseDown="login_top_layer_MouseDown"/>
         <Rectangle x:Name="check_in" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="607,0,0,0"/>
         <Rectangle x:Name="check_in_layer" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="138" Margin="607,0,0,0"/>
         <Label Content="CHECK IN" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="643.158,9.333,0,0" FontWeight="Bold"/>
         <Rectangle x:Name="check_in_top_layer" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="607,0,0,0" Fill="#FF2929A8" Opacity="0" MouseDown="check_in_top_layer_MouseDown"/>
+        <Label x:Name="label_reserve_id" Content="Username :" HorizontalAlignment="Left" Margin="20.189,9.333,0,0" VerticalAlignment="Top" Foreground="#FF4E3C3C" FontWeight="Bold"/>
+        <TextBox IsReadOnly="true" x:Name="userNameBox" HorizontalAlignment="Left" Height="25.96" Margin="98.182,9.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129.818" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" BorderBrush="#FF4F4F4F" Padding="1" BorderThickness="2" IsReadOnlyCaretVisible="True">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
     </Grid>
 </Window>

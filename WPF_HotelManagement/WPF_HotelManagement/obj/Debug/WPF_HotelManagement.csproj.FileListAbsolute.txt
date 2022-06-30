@@ -45,13 +45,10 @@ D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\De
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\checkOut.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\checkOutForm.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\checkOutForm.baml
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\Window1.g.cs
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\Window1.baml
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\occupiedRoom.g.cs
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\occupiedRoom.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\EmployeeForm.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\EmployeeForm.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\EmployeeDelForm.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\EmployeeList.g.cs
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\EmployeeDelForm.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\EmployeeList.baml
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\WPF_HotelManagement.csproj.AssemblyReference.cache
