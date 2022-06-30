@@ -17,10 +17,11 @@ namespace WPF_HotelManagement
     /// </summary>
     public partial class checkInForm : Window
     {
-        public checkInForm()
+        public checkInForm(string username)
         {
             InitializeComponent();
             getData();
+            userNameBox.Text = username;
         }
 
         public void getData()
@@ -34,7 +35,7 @@ namespace WPF_HotelManagement
         {
             object selectedItem = cusGrid.SelectedItem;
             selectedItemText = (cusGrid.SelectedCells[0].Column.GetCellContent(selectedItem) as TextBlock).Text;
-            reservationCheck reserveCheck = new reservationCheck();
+            reservationCheck reserveCheck = new reservationCheck(userNameBox.Text);
             reserveCheck.Show();
         }
     }

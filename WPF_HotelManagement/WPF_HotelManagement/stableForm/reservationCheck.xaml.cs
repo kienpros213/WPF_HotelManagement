@@ -8,11 +8,12 @@ namespace WPF_HotelManagement
     /// </summary>
     public partial class reservationCheck : Window
     {
-        public reservationCheck()
+        public reservationCheck(string username)
         {
             InitializeComponent();
             getReserveData();
             getClassAndPrice();
+            userNameBox.Text = username;
         }
         string idPar = checkInForm.selectedItemText;
 
@@ -26,7 +27,7 @@ namespace WPF_HotelManagement
             //check-in button
             string _roomID = roomId.Text;
             string _cusID = customerId.Text;
-            updateReserveData.takeRoom(_roomID, _cusID);
+            updateReserveData.takeRoom(_roomID, _cusID, userNameBox.Text);
             checkServiceInput.Check(_cusID, breakfast, cleaning, carRenting, massage);
             MessageBox.Show("check-in success");
             this.Close();

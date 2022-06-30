@@ -40,7 +40,7 @@ namespace WPF_HotelManagement
 
         private void check_in_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            checkInForm _checkInForm = new checkInForm();
+            checkInForm _checkInForm = new checkInForm(userNameBox.Text);
             _checkInForm.Show();
         }
 

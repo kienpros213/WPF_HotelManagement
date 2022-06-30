@@ -22,7 +22,6 @@ namespace WPF_HotelManagement
         private void check_out_top_MouseDown(object sender, MouseButtonEventArgs e)
         {
             //check-out button
-            //fix lai updateTransaction.Update thanh cac Textbox
             string _roomID = roomId.Text;
             updateReserveData.returnRoom(_roomID, _cusID);
             updateTransaction.Update(_cusID, 1, total, payMethod1.Text, DateTime.Now.ToString(), userNameBox.Text);
