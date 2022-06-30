@@ -36,35 +36,35 @@ namespace WPF_HotelManagement
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
         }
 
         private void breakfast_LostFocus(object sender, RoutedEventArgs e)
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
         }
 
         private void cleaning_LostFocus(object sender, RoutedEventArgs e)
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
         }
 
         private void carRenting_LostFocus(object sender, RoutedEventArgs e)
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
         }
 
         private void massage_LostFocus(object sender, RoutedEventArgs e)
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, total);
+            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
         }
 
 
