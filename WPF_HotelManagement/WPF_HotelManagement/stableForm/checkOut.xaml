@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_HotelManagement"
         mc:Ignorable="d"
-        Title="reservationCheck" Height="771.626" Width="1682">
+        Title="reservationCheck" Height="771.626" Width="1283">
     <Window.Resources>
         <Storyboard x:Key="1">
             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="reservationId">
@@ -433,7 +433,7 @@
         </EventTrigger>
     </Window.Triggers>
     <Grid Margin="0,0,0,-401.45">
-        <Rectangle Fill="#FFF5A38E" HorizontalAlignment="Left" Height="630.675" Margin="10,96.325,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
+        <Rectangle Fill="#FF88C0C3" HorizontalAlignment="Left" Height="630.675" Margin="10,96.325,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
         <Label x:Name="label_reserve_id" Content="Reservation ID :" HorizontalAlignment="Left" Margin="43.049,96.325,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" FontWeight="Bold"/>
         <Label x:Name="label_room_id" Content="Room ID :" HorizontalAlignment="Left" Margin="43.049,196.325,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" FontWeight="Bold"/>
         <Label x:Name="label_reserve_date" Content="Reservation Date :" HorizontalAlignment="Left" Margin="43.049,296.325,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#FF4E3C3C" Width="263" FontWeight="Bold"/>
@@ -594,12 +594,12 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Rectangle x:Name="check_out" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="1170,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
-        <Label x:Name="check_in_label" Content="CHECK OUT" HorizontalAlignment="Left" Margin="1203.872,672.666,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.29,0.489"/>
-        <Rectangle x:Name="check_out_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="1170,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Opacity="0" MouseDown="check_out_top_MouseDown"/>
+        <Rectangle x:Name="check_out" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Margin="1026,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="check_in_label" Content="CHECK OUT" HorizontalAlignment="Left" Margin="1059.872,672.666,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.29,0.489"/>
+        <Rectangle x:Name="check_out_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="1026,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Opacity="0" MouseDown="check_out_top_MouseDown"/>
         <Label x:Name="customer_info" Content="CUSTOMER INFOMATION" HorizontalAlignment="Left" Margin="159.22,28.121,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#FF88C0C3" FontWeight="Bold"/>
-        <Rectangle Fill="#FFF5A38E" HorizontalAlignment="Left" Height="312.675" Margin="846,96.325,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
-        <Label x:Name="customer_info_Copy" Content="PAYMENT" HorizontalAlignment="Left" Margin="1147.22,33.121,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#FF88C0C3" FontWeight="Bold"/>
+        <Rectangle Fill="#FF88C0C3" HorizontalAlignment="Left" Height="312.675" Margin="846,96.325,0,0" Stroke="Black" VerticalAlignment="Top" Width="416.5" RadiusX="10" RadiusY="10"/>
+        <Label x:Name="customer_info_Copy" Content="PAYMENT" HorizontalAlignment="Left" Margin="1016,28.121,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#FF88C0C3" FontWeight="Bold"/>
         <Label x:Name="label_days_range" Content="Days Range:" HorizontalAlignment="Left" Margin="43.049,599.359,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <TextBox x:Name="daysRange" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="43.049,641.282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
@@ -648,8 +648,8 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Rectangle Fill="#FFF5A38E" HorizontalAlignment="Left" Height="192.193" Margin="846,439.143,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" RadiusX="10" RadiusY="10"/>
-        <Label x:Name="label_pay_method" Content="Pay Method:" HorizontalAlignment="Left" Margin="1001.07,460.837,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Rectangle Fill="#FF88C0C3" HorizontalAlignment="Left" Height="192.193" Margin="846,439.143,0,0" Stroke="Black" VerticalAlignment="Top" Width="416.5" RadiusX="10" RadiusY="10"/>
+        <Label x:Name="label_pay_method" Content="Pay Method:" HorizontalAlignment="Left" Margin="861.07,462.036,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <TextBox x:Name="payMethod" IsReadOnly="True" HorizontalAlignment="Left" Height="50.023" Margin="1723,490.495,-399,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -665,8 +665,8 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="label_discount" Content="Discount:" HorizontalAlignment="Left" Margin="1034.43,515.859,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
-        <TextBox x:Name="discount" HorizontalAlignment="Left" Height="50.023" Margin="1160,509.09,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0" LostFocus="discount_LostFocus">
+        <Label x:Name="label_discount" Content="Discount:" HorizontalAlignment="Left" Margin="894.43,517.058,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <TextBox x:Name="discount" HorizontalAlignment="Left" Height="50.023" Margin="1020,510.289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206.61" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0" LostFocus="discount_LostFocus">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -681,8 +681,8 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="label_total" Content="Total:" HorizontalAlignment="Left" Margin="1064.61,564.113,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FF4E3C3C"/>
-        <TextBox x:Name="total" IsReadOnly="true"  HorizontalAlignment="Left" Height="50.023" Margin="1160,564.113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
+        <Label x:Name="label_total" Content="Total:" HorizontalAlignment="Left" Margin="924.61,565.312,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FF4E3C3C"/>
+        <TextBox x:Name="total" IsReadOnly="true"  HorizontalAlignment="Left" Height="50.023" Margin="1020,565.312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206.61" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -697,7 +697,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="breakfast" HorizontalAlignment="Left" Height="50.023" Margin="877.5,188.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
+        <TextBox x:Name="breakfast" HorizontalAlignment="Left" Height="50.023" Margin="877.5,188.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -712,7 +712,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="carRenting" HorizontalAlignment="Left" Height="50.023" Margin="877.5,288.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
+        <TextBox x:Name="carRenting" HorizontalAlignment="Left" Height="50.023" Margin="877.5,288.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -727,7 +727,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="cleaning" HorizontalAlignment="Left" Height="50.023" Margin="1283.5,188.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
+        <TextBox x:Name="cleaning" HorizontalAlignment="Left" Height="50.023" Margin="1064.61,188.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -742,7 +742,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="massage" HorizontalAlignment="Left" Height="50.023" Margin="1283.5,288.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
+        <TextBox x:Name="massage" HorizontalAlignment="Left" Height="50.023" Margin="1064.61,288.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True" Text="0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -759,8 +759,8 @@
         </TextBox>
         <Label x:Name="label_fore_name_Copy" Content="Car Renting :" HorizontalAlignment="Left" Margin="877.5,244.549,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <Label x:Name="label_fore_name_Copy1" Content="Breakfast :" HorizontalAlignment="Left" Margin="877.5,144.549,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
-        <Label x:Name="label_fore_name_Copy2" Content="Cleaning :" HorizontalAlignment="Left" Margin="1283.5,144.97,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
-        <Label x:Name="Massage" Content="Massage :" HorizontalAlignment="Left" Margin="1283.5,244.97,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_fore_name_Copy2" Content="Cleaning :" HorizontalAlignment="Left" Margin="1064.61,144.97,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
+        <Label x:Name="Massage" Content="Massage :" HorizontalAlignment="Left" Margin="1064.61,244.97,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Foreground="#FF4E3C3C"/>
         <Label x:Name="label_reserve_id_Copy" Content="Username :" HorizontalAlignment="Left" Margin="10.728,10,0,0" VerticalAlignment="Top" Foreground="#FF4E3C3C" FontWeight="Bold"/>
         <TextBox IsReadOnly="true" x:Name="userNameBox" HorizontalAlignment="Left" Height="25.96" Margin="88.721,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129.818" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" BorderBrush="#FF4F4F4F" Padding="1" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
@@ -777,7 +777,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <ComboBox x:Name="payMethod1" HorizontalAlignment="Left" Height="50.023" Margin="1160,454.067,0,0" VerticalAlignment="Top" Width="350" RenderTransformOrigin="1.167,-0.417" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
+        <ComboBox x:Name="payMethod1" HorizontalAlignment="Left" Height="50.023" Margin="1020,455.266,0,0" VerticalAlignment="Top" Width="206.61" RenderTransformOrigin="1.167,-0.417" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
             <ComboBoxItem>Cash</ComboBoxItem>
             <ComboBoxItem IsSelected="True">Credit Card</ComboBoxItem>
             <ComboBoxItem>Online Banking</ComboBoxItem>
