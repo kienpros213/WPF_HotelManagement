@@ -24,6 +24,25 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
+        <TextBox TabIndex="0" x:Name="searchBar" HorizontalAlignment="Left" Height="50.023" Margin="457.356,17.476,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Rectangle x:Name="searchButton" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Margin="825.5,17.75,0,0" Stroke="Black" VerticalAlignment="Top" Width="130.5"/>
+        <Label Content="Search" HorizontalAlignment="Left" Margin="851.5,20.826,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Rectangle x:Name="searchButtonTop" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Margin="825.5,17.75,0,0" Stroke="Black" VerticalAlignment="Top" Width="130.5" Opacity="0" MouseDown="searchButtonTop_MouseDown"/>
+        <Label Content="CHECK IN" HorizontalAlignment="Left" Margin="45.5,4.295,0,0" VerticalAlignment="Top" FontSize="40" FontWeight="Bold"/>
 
     </Grid>
 </Window>

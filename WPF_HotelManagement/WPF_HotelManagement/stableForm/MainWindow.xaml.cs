@@ -56,5 +56,11 @@ namespace WPF_HotelManagement
             _login.Show();
             this.Close();
         }
+
+        private void customer_top_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            customerForm customerForm = new customerForm();
+            customerForm.Show();
+        }
     }
 }

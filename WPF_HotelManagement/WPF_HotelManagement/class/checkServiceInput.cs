@@ -14,22 +14,18 @@ namespace WPF_HotelManagement
             if(breakfast.Text != "0")
             {
                 updateReserveData.updateService(cusID, "1", breakfast.Text);
-                MessageBox.Show("update breakfast service");
             }
             if (cleaing.Text != "0")
             {
                 updateReserveData.updateService(cusID, "2", cleaing.Text);
-                MessageBox.Show("update breakfast cleaning");
             }
             if (carRenting.Text != "0")
             {
                 updateReserveData.updateService(cusID, "3", carRenting.Text);
-                MessageBox.Show("update car renting service");
             }
             if (massage.Text != "0")
             {
                 updateReserveData.updateService(cusID, "4", massage.Text);
-                MessageBox.Show("update massage service");
             }
         }
     }

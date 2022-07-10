@@ -38,5 +38,10 @@ namespace WPF_HotelManagement
             reservationCheck reserveCheck = new reservationCheck(userNameBox.Text);
             reserveCheck.Show();
         }
+
+        private void searchButtonTop_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            getDataGridView.bindGrid(cusGrid, "EXEC searchCustomer @cusName = '"+searchBar.Text+"'");
+        }
     }
 }

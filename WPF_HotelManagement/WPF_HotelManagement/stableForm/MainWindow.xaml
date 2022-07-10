@@ -156,6 +156,42 @@
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="customerEasing">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="customer_layer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="44">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="customer_layer">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="customerEasing_Copy1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="customer_layer">
+                <SplineDoubleKeyFrame KeyTime="0" Value="44"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="customer_layer">
+                <SplineColorKeyFrame KeyTime="0" Value="#FF88C0C3"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF88C0C3">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="home_top_layer">
@@ -188,6 +224,12 @@
         <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="check_in_top_layer">
             <BeginStoryboard x:Name="checkInEasingReverse_BeginStoryboard" Storyboard="{StaticResource checkInEasingReverse}"/>
         </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="customer_top">
+            <BeginStoryboard Storyboard="{StaticResource customerEasing}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="customer_top">
+            <BeginStoryboard x:Name="customerEasing_Copy1_BeginStoryboard" Storyboard="{StaticResource customerEasing_Copy1}"/>
+        </EventTrigger>
     </Window.Triggers>
 
     <Grid>
@@ -197,9 +239,9 @@
             </Image.Source>
         </Image>
         <Rectangle x:Name="home" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="469,0,0,0"/>
-        <Rectangle x:Name="home_layer" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="469,0,0,0"/>
-        <Label Content="LOGOUT" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="509.5,10,0,0" FontWeight="Bold"/>
-        <Rectangle x:Name="home_top_layer" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="469,0,0,0" Fill="#FF2929A8" Opacity="0" MouseDown="home_top_layer_MouseDown"/>
+        <Rectangle x:Name="home_layer" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="331,0,0,0"/>
+        <Label Content="LOGOUT" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="371.5,10,0,0" FontWeight="Bold"/>
+        <Rectangle x:Name="home_top_layer" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="331,0,0,0" Fill="#FF2929A8" Opacity="0" MouseDown="home_top_layer_MouseDown"/>
         <Rectangle x:Name="booking" Fill="White" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Rectangle x:Name="booking_layer" Fill="White" HorizontalAlignment="Left" Height="44" Margin="745,0,0,0" VerticalAlignment="Top" Width="138"/>
         <Label Content="BOOKING" HorizontalAlignment="Left" Margin="787,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
@@ -232,5 +274,12 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
+        <Rectangle x:Name="log_out" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="331,0,0,0"/>
+        <Label Content="LOGOUT" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="371.5,10,0,0" FontWeight="Bold"/>
+        <Rectangle x:Name="log_out_top" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="331,0,0,0" Fill="#FF2929A8" Opacity="0" MouseDown="home_top_layer_MouseDown"/>
+        <Rectangle x:Name="customer" Fill="White" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="469,0,0,0"/>
+        <Rectangle x:Name="customer_layer" Fill="White" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="138" Margin="469,0,0,0"/>
+        <Label x:Name="customer_label" Content="CUSTOMER" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="496.5,10,0,0" FontWeight="Bold"/>
+        <Rectangle x:Name="customer_top" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="138" Margin="469,0,0,0" Fill="#FF2929A8" Opacity="0" MouseDown="customer_top_MouseDown"/>
     </Grid>
 </Window>

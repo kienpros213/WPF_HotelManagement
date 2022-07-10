@@ -26,14 +26,14 @@ namespace WPF_HotelManagement
             sa.Fill(dt);
             if(dt.Rows.Count == 1)
             {
-                MessageBox.Show("welcum");
+                MessageBox.Show("welcome "+userNameBox.Text+"");
                 MainWindow main = new MainWindow(userNameBox.Text);
                 main.Show();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("fuck off");
+                MessageBox.Show("sai thông tin đăng nhập, mời nhập lại");
             }
         }
     }

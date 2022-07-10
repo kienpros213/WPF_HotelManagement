@@ -52,3 +52,5 @@ D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\De
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\EmployeeDelForm.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\stableForm\EmployeeList.baml
 D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\WPF_HotelManagement.csproj.AssemblyReference.cache
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\customerForm.g.cs
+D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\customerForm.baml

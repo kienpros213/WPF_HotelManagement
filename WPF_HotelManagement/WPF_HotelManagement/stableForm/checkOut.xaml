@@ -681,7 +681,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="label_total" Content="Total:" HorizontalAlignment="Left" Margin="924.61,565.312,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FF4E3C3C"/>
+        <Label x:Name="label_total" Content="Total:" HorizontalAlignment="Left" Margin="924.61,565.312,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FFFF5D5D"/>
         <TextBox x:Name="total" IsReadOnly="true"  HorizontalAlignment="Left" Height="50.023" Margin="1020,565.312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206.61" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
