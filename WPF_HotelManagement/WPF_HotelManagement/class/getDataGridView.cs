@@ -9,7 +9,7 @@ namespace WPF_HotelManagement
     {
         public static void bindGrid(System.Windows.Controls.DataGrid _dataGridViewObj, string tbl)
         {
-            string constring = "Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True";
+            string constring = "Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True";
             using (SqlConnection con = new SqlConnection(constring))
             {
                 SqlCommand command = new SqlCommand(tbl, con);

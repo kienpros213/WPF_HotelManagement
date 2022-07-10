@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_HotelManagement"
         mc:Ignorable="d"
-        Title="customerForm" Height="528" Width="998.5">
+        Title="customerForm" Height="528" Width="880">
     <Grid Background="#FFB62323">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="386*"/>
             <ColumnDefinition Width="605*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="cusGrid" HorizontalAlignment="Left" Height="341" Margin="-2,156,0,0" VerticalAlignment="Top" Width="992.5" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="cusGrid" HorizontalAlignment="Left" Height="317" Margin="1,184.5,0,0" VerticalAlignment="Top" Width="870" Grid.ColumnSpan="2"/>
         <Label x:Name="label_reserve_id_Copy" Content="Username :" HorizontalAlignment="Left" Margin="0.228,-53,0,0" VerticalAlignment="Top" Foreground="#FF4E3C3C" FontWeight="Bold"/>
         <TextBox IsReadOnly="true" x:Name="userNameBox" HorizontalAlignment="Left" Height="25.96" Margin="78.221,-53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129.818" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" BorderBrush="#FF4F4F4F" Padding="1" BorderThickness="2" IsReadOnlyCaretVisible="True">
             <TextBox.Resources>
@@ -28,7 +28,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox TabIndex="0" x:Name="searchBar" HorizontalAlignment="Left" Height="50.023" Margin="71.356,17.476,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Grid.Column="1">
+        <TextBox TabIndex="0" x:Name="searchBar" HorizontalAlignment="Left" Height="50.023" Margin="328.272,53.476,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2" Grid.ColumnSpan="2">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -43,19 +43,38 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Rectangle x:Name="searchButton" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Margin="439.5,17.75,0,0" Stroke="Black" VerticalAlignment="Top" Width="130.5" Grid.Column="1"/>
-        <Label Content="Search" HorizontalAlignment="Left" Margin="465.5,20.826,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
-        <Rectangle x:Name="searchButtonTop" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Margin="439.5,17.75,0,0" Stroke="Black" VerticalAlignment="Top" Width="130.5" Opacity="0" MouseDown="searchButtonTop_MouseDown" Grid.Column="1"/>
-        <Label Content="CUSTOMER" HorizontalAlignment="Left" Margin="45.5,7.295,0,0" VerticalAlignment="Top" FontSize="40" FontWeight="Bold"/>
-        <Rectangle x:Name="all" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="108.5,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="225"/>
-        <Label x:Name="all_label" Content="ALL CUSTOMER" HorizontalAlignment="Left" Margin="129.5,105.076,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-        <Rectangle x:Name="all_top" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="108.5,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Opacity="0" MouseDown="all_top_MouseDown"/>
-        <Rectangle x:Name="checked_in" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="6.695,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Grid.Column="1"/>
-        <Label x:Name="checked_in_label" Content="CHECKED IN" HorizontalAlignment="Left" Margin="44.695,105.076,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
-        <Rectangle x:Name="checked_in_top" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="6.695,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Opacity="0" MouseDown="checked_in_top_MouseDown" Grid.Column="1"/>
-        <Rectangle x:Name="checked_out" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="289.864,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Grid.Column="1"/>
-        <Label x:Name="checked_out_label" Content="CHECKED OUT" HorizontalAlignment="Left" Margin="315.862,105.075,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
-        <Rectangle x:Name="checked_out_top" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="289.864,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Opacity="0" MouseDown="checked_out_top_MouseDown" Grid.Column="1"/>
+        <Rectangle x:Name="searchButton" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Margin="360.988,53.75,0,0" Stroke="Black" VerticalAlignment="Top" Width="130.5" Grid.Column="1"/>
+        <Label Content="Search" HorizontalAlignment="Left" Margin="386.988,56.826,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+        <Rectangle x:Name="searchButtonTop" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Margin="360.988,53.75,0,0" Stroke="Black" VerticalAlignment="Top" Width="130.5" Opacity="0" MouseDown="searchButtonTop_MouseDown" Grid.Column="1"/>
+        <Rectangle x:Name="all" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="54.136,122.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="225"/>
+        <Label x:Name="all_label" Content="ALL CUSTOMER" HorizontalAlignment="Left" Margin="75.136,126.676,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Rectangle x:Name="all_top" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="54.136,122.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Opacity="0" MouseDown="all_top_MouseDown"/>
+        <Rectangle x:Name="checked_in" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="314.759,122.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Grid.ColumnSpan="2"/>
+        <Label x:Name="checked_in_label" Content="CHECKED IN" HorizontalAlignment="Left" Margin="14.631,126.676,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+        <Rectangle x:Name="checked_in_top" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="314.759,122.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Opacity="0" MouseDown="checked_in_top_MouseDown" Grid.ColumnSpan="2"/>
+        <Rectangle x:Name="checked_out" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="235.5,122.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Grid.Column="1"/>
+        <Label x:Name="checked_out_label" Content="CHECKED OUT" HorizontalAlignment="Left" Margin="262.998,126.675,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+        <Rectangle x:Name="checked_out_top" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="235.5,122.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Opacity="0" MouseDown="checked_out_top_MouseDown" Grid.Column="1"/>
+        <TextBox TabIndex="0" x:Name="customerID" HorizontalAlignment="Left" Height="50.023" Margin="40.988,53.476,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="24" BorderBrush="#FF4F4F4F" Padding="8" BorderThickness="2">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Rectangle x:Name="searchButton_Copy" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Margin="182.088,54.499,0,0" Stroke="Black" VerticalAlignment="Top" Width="130.5"/>
+        <Label Content="Search" HorizontalAlignment="Left" Margin="208.088,57.575,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Rectangle x:Name="idSearch" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Margin="182.088,54.499,0,0" Stroke="Black" VerticalAlignment="Top" Width="130.5" Opacity="0" MouseDown="idSearch_MouseDown"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="87.588,10,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Customer Name " HorizontalAlignment="Left" Margin="328.272,10,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

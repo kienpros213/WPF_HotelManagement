@@ -1,4 +1,4 @@
-﻿namespace WPF_HotelManagement
+﻿    namespace WPF_HotelManagement
 {
     class count
     {

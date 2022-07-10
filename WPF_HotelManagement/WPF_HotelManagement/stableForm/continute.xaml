@@ -11,11 +11,11 @@
             <RowDefinition Height="71*"/>
             <RowDefinition Height="98*"/>
         </Grid.RowDefinitions>
-        <Label Content="wanna keep going ?" HorizontalAlignment="Left" Margin="71.999,26.332,0,0" VerticalAlignment="Top" Width="245.326" FontWeight="Bold" FontSize="24"/>
+        <Label Content="Continute making reservation" HorizontalAlignment="Left" Margin="28.666,40.688,0,0" VerticalAlignment="Top" Width="346.534" FontWeight="Bold" FontSize="24" Grid.RowSpan="2"/>
         <Rectangle x:Name="YES" Fill="#FFA5EA60" HorizontalAlignment="Left" Height="34.666" Margin="45.333,44.405,0,0" Stroke="Black" VerticalAlignment="Top" Width="128.667" Grid.Row="1"/>
         <Rectangle x:Name="NO" Fill="#FFEA9680" HorizontalAlignment="Left" Height="34.666" Margin="230,44.405,0,0" Stroke="Black" VerticalAlignment="Top" Width="128.667" Grid.Row="1"/>
-        <Label x:Name="YES_LABEL" Content="YES!!" HorizontalAlignment="Left" Margin="90.666,49.109,0,0" VerticalAlignment="Top" Width="35.993" FontWeight="Bold" Grid.Row="1"/>
-        <Label x:Name="NO_LABEL" Content="NAH" HorizontalAlignment="Left" Margin="278.664,49.109,0,0" VerticalAlignment="Top" Width="35.993" FontWeight="Bold" Grid.Row="1"/>
+        <Label x:Name="YES_LABEL" Content="YES" HorizontalAlignment="Left" Margin="90.666,49.109,0,0" VerticalAlignment="Top" Width="35.993" FontWeight="Bold" Grid.Row="1"/>
+        <Label x:Name="NO_LABEL" Content="NO" HorizontalAlignment="Left" Margin="278.664,49.109,0,0" VerticalAlignment="Top" Width="35.993" FontWeight="Bold" Grid.Row="1"/>
         <Rectangle x:Name="YES_TOP" Fill="#FFA5EA60" HorizontalAlignment="Left" Height="34.666" Margin="45.333,44.405,0,0" Stroke="Black" VerticalAlignment="Top" Width="128.667" Opacity="0" MouseDown="YES_TOP_MouseDown" Grid.Row="1"/>
         <Rectangle x:Name="NO_TOP" Fill="#FFA5EA60" HorizontalAlignment="Left" Height="34.666" Margin="230,44.405,0,0" Stroke="Black" VerticalAlignment="Top" Width="128.667" Opacity="0" MouseDown="NO_TOP_MouseDown" Grid.Row="1"/>
     </Grid>

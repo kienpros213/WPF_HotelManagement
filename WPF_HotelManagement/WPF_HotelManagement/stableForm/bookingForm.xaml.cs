@@ -50,7 +50,7 @@ namespace WPF_HotelManagement
 
         private void comfirm_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            updateReserveData.Update(foreName.Text, lastName.Text, customerAddress.Text, customerStatus.Text, room_id.Text, reservation_date.Text, date_in.Text, date_out.Text);
+            updateReserveData.Update(foreName.Text, lastName.Text, customerAddress.Text, customerStatus.Text, room_id.Text, reservation_date.Text, date_in.Text, date_out.Text, userNameBox.Text);
             continute continuteWindow = new continute();
             continuteWindow.Show();
             username = userNameBox.Text;

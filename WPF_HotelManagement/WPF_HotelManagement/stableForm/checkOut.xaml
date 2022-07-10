@@ -594,9 +594,9 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Rectangle x:Name="check_out" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Margin="1026,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
-        <Label x:Name="check_in_label" Content="CHECK OUT" HorizontalAlignment="Left" Margin="1059.872,672.666,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.29,0.489"/>
-        <Rectangle x:Name="check_out_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="1026,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Opacity="0" MouseDown="check_out_top_MouseDown"/>
+        <Rectangle x:Name="check_out" Fill="#FFF5A38E" HorizontalAlignment="Left" Height="70" Margin="966,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="check_in_label" Content="CHECK OUT" HorizontalAlignment="Left" Margin="999.872,672.666,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.29,0.489"/>
+        <Rectangle x:Name="check_out_top" Fill="#FF88C0C3" HorizontalAlignment="Left" Height="70" Margin="966,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Opacity="0" MouseDown="check_out_top_MouseDown"/>
         <Label x:Name="customer_info" Content="CUSTOMER INFOMATION" HorizontalAlignment="Left" Margin="159.22,28.121,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#FF88C0C3" FontWeight="Bold"/>
         <Rectangle Fill="#FF88C0C3" HorizontalAlignment="Left" Height="312.675" Margin="846,96.325,0,0" Stroke="Black" VerticalAlignment="Top" Width="416.5" RadiusX="10" RadiusY="10"/>
         <Label x:Name="customer_info_Copy" Content="PAYMENT" HorizontalAlignment="Left" Margin="1016,28.121,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#FF88C0C3" FontWeight="Bold"/>

@@ -20,7 +20,7 @@ namespace WPF_HotelManagement
         private void login_layer_top_MouseDown(object sender, MouseButtonEventArgs e)
         {
             string sqlstring = "SELECT * FROM tblEmployees WHERE userName = '"+userNameBox.Text+"' AND userPassword = '"+passwordBox.Text+"'";
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
             SqlDataAdapter sa = new SqlDataAdapter(sqlstring, con);
             DataTable dt = new DataTable();
             sa.Fill(dt);
@@ -33,7 +33,7 @@ namespace WPF_HotelManagement
             }
             else
             {
-                MessageBox.Show("sai thông tin đăng nhập, mời nhập lại");
+                MessageBox.Show("invalid username (or password)");
             }
         }
     }

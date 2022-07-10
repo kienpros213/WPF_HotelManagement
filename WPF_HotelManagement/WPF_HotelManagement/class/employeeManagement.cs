@@ -13,7 +13,7 @@ namespace WPF_HotelManagement
         public static void Add(string fName, string lName, string job, string address, string username, string password)
         {
             string sqlstring = "EXEC addEmployee @fName = '" + fName + "', @lName = '" + lName + "', @job = '" + job + "', @address = '" + address + "', @username = '" + username + "', @password = '" + password + "'   ";
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
             command.ExecuteNonQuery();
@@ -24,7 +24,7 @@ namespace WPF_HotelManagement
         public static void DelShow(string employeeID, System.Windows.Controls.TextBox foreName, System.Windows.Controls.TextBox lastName, System.Windows.Controls.TextBox job, System.Windows.Controls.TextBox address, System.Windows.Controls.TextBox username, System.Windows.Controls.TextBox password)
         {
             string sqlstring = "SELECT * FROM tblEmployees WHERE EmployeeID = '"+employeeID+"' ";
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
             SqlCommand command = new SqlCommand(sqlstring, con);
             con.Open();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -43,7 +43,7 @@ namespace WPF_HotelManagement
         public static void Delete(string employeeID)
         {
             string sqlstring = "DELETE FROM tblEmployees WHERE employeeID = "+employeeID+"";
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
             command.ExecuteNonQuery();
@@ -54,7 +54,7 @@ namespace WPF_HotelManagement
         public static void Update(string employeeID, string fName, string lName, string job, string address, string username, string password)
         {
             string sqlstring = "EXEC EmployeeUpdate @employeeID = " + employeeID+ ", @fName = '" + fName + "', @lName = '" + lName + "', @job = '" + job + "', @address = '" + address + "', @username = '" + username + "', @password = '" + password + "'  ";
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
             command.ExecuteNonQuery();
