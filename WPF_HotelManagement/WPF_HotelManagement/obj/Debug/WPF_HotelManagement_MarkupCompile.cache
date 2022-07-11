@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\stableForm\App.xaml
-12646937626
+131518508563
 
-25-2011556138
+26815660671
 19-1425254252
-customerForm.xaml;stableForm\EmployeeDelForm.xaml;stableForm\EmployeeList.xaml;stableForm\EmployeeForm.xaml;stableForm\bookingForm.xaml;stableForm\checkOutForm.xaml;stableForm\checkInForm.xaml;stableForm\continute.xaml;stableForm\login.xaml;stableForm\MainWindow.xaml;stableForm\checkOut.xaml;stableForm\reservationCheck.xaml;
+customerDetail.xaml;customerForm.xaml;stableForm\EmployeeDelForm.xaml;stableForm\EmployeeList.xaml;stableForm\EmployeeForm.xaml;stableForm\bookingForm.xaml;stableForm\checkOutForm.xaml;stableForm\checkInForm.xaml;stableForm\continute.xaml;stableForm\login.xaml;stableForm\MainWindow.xaml;stableForm\checkOut.xaml;stableForm\reservationCheck.xaml;
 
 False
 

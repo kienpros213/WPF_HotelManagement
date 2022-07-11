@@ -36,7 +36,7 @@ namespace WPF_HotelManagement
             con.Close();
         }
         
-        public static void updateService(string cusID, string serviceID, string amount)
+        public static void Service(string cusID, string serviceID, string amount)
         {
             string sqlstring = "INSERT INTO tblOrder VALUES ("+cusID+ ", " + serviceID + ", " + amount + ")";
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
@@ -45,5 +45,16 @@ namespace WPF_HotelManagement
             command.ExecuteNonQuery();
             con.Close();
         }
+
+        public static void updateService(string cusID, string serviceID, string amount)
+        {
+            string sqlstring = "EXEC updateServices @cusID = "+cusID+ ", @serviceID = " + serviceID + ", @amount = " + amount + "";
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
+            con.Open();
+            SqlCommand command = new SqlCommand(sqlstring, con);
+            command.ExecuteNonQuery();
+            con.Close();
+        }
+
     }
 }

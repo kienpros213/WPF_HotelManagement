@@ -11,7 +11,7 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="cusGrid" HorizontalAlignment="Left" Height="317" Margin="1,184.5,0,-3.1" VerticalAlignment="Top" Width="914.4" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="cusGrid" HorizontalAlignment="Left" Height="317" Margin="1,184.5,0,-3.1" VerticalAlignment="Top" Width="914.4" Grid.ColumnSpan="2" SelectedCellsChanged="cusGrid_SelectedCellsChanged"/>
         <Label x:Name="label_reserve_id_Copy" Content="Username :" HorizontalAlignment="Left" Margin="0.228,-53,0,0" VerticalAlignment="Top" Foreground="#FF4E3C3C" FontWeight="Bold" Height="25.96" Width="73.027" Grid.ColumnSpan="2"/>
         <TextBox IsReadOnly="true" x:Name="userNameBox" HorizontalAlignment="Left" Height="25.96" Margin="18.214,-53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129.818" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" BorderBrush="#FF4F4F4F" Padding="1" BorderThickness="2" IsReadOnlyCaretVisible="True" Grid.Column="1">
             <TextBox.Resources>

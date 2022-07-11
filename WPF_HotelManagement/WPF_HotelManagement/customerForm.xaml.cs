@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Input;
+using System.Windows.Controls;
 namespace WPF_HotelManagement
 {
     /// <summary>
@@ -15,12 +16,12 @@ namespace WPF_HotelManagement
 
         private void checked_out_top_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            getDataGridView.bindGrid(cusGrid, "EXEC getCheckOutData");
+            getDataGridView.bindGrid(cusGrid, "EXEC getCheckedOutData");
         }
 
         private void checked_in_top_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            getDataGridView.bindGrid(cusGrid, "EXEC getCheckInData");
+            getDataGridView.bindGrid(cusGrid, "EXEC getCheckOutData");
         }
 
         private void all_top_MouseDown(object sender, MouseButtonEventArgs e)
@@ -36,6 +37,16 @@ namespace WPF_HotelManagement
         private void idSearch_MouseDown(object sender, MouseButtonEventArgs e)
         {
             getDataGridView.bindGrid(cusGrid, "EXEC searchById @id = '"+customerID.Text+"'");
+        }
+        public static string selectedItemText;
+
+        private void cusGrid_SelectedCellsChanged(object sender, System.Windows.Controls.SelectedCellsChangedEventArgs e)
+        {
+            object selectedItem = cusGrid.SelectedItem;
+            selectedItemText = (cusGrid.SelectedCells[0].Column.GetCellContent(selectedItem) as TextBlock).Text;
+
+            customerDetail reserveCheck = new customerDetail();
+            reserveCheck.Show();
         }
     }
 }

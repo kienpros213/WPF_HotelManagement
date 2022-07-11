@@ -29,7 +29,7 @@ namespace WPF_HotelManagement
         public static void getServiceData(string cusID, System.Windows.Controls.TextBox breakfast, System.Windows.Controls.TextBox cleaning, System.Windows.Controls.TextBox carRenting, System.Windows.Controls.TextBox massage)
         {
             string sqlstring = "EXEC getServices @cusID = "+cusID+"";
-            string constring = "Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True";
+            string constring = "Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True";
             using (SqlConnection con = new SqlConnection(constring))
             {
                 SqlCommand command = new SqlCommand(sqlstring, con);

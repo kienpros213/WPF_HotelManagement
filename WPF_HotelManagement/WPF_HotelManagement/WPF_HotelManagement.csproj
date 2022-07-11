@@ -75,6 +75,9 @@
     <Compile Include="class\count.cs" />
     <Compile Include="class\employeeManagement.cs" />
     <Compile Include="class\updateTransaction.cs" />
+    <Compile Include="customerDetail.xaml.cs">
+      <DependentUpon>customerDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="customerForm.xaml.cs">
       <DependentUpon>customerForm.xaml</DependentUpon>
     </Compile>
@@ -110,6 +113,10 @@
     <Compile Include="stableForm\reservationCheck.xaml.cs">
       <DependentUpon>reservationCheck.xaml</DependentUpon>
     </Compile>
+    <Page Include="customerDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="customerForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

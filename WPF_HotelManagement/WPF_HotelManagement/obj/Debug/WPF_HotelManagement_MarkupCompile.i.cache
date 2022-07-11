@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\
+D:\Project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\obj\Debug\
 WPF_HotelManagement
 none
 false
 DEBUG;TRACE
-D:\project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\stableForm\App.xaml
-12646937626
+D:\Project\C#\WPF_HotelManagement\WPF_HotelManagement\WPF_HotelManagement\stableForm\App.xaml
+131518508563
 
-261441051791
-191496788141
-customerForm.xaml;stableForm\EmployeeDelForm.xaml;stableForm\EmployeeList.xaml;stableForm\EmployeeForm.xaml;stableForm\bookingForm.xaml;stableForm\checkOutForm.xaml;stableForm\checkInForm.xaml;stableForm\continute.xaml;stableForm\login.xaml;stableForm\MainWindow.xaml;stableForm\checkOut.xaml;stableForm\reservationCheck.xaml;
+27-26698696
+19-1425254252
+customerDetail.xaml;customerForm.xaml;stableForm\EmployeeDelForm.xaml;stableForm\EmployeeList.xaml;stableForm\EmployeeForm.xaml;stableForm\bookingForm.xaml;stableForm\checkOutForm.xaml;stableForm\checkInForm.xaml;stableForm\continute.xaml;stableForm\login.xaml;stableForm\MainWindow.xaml;stableForm\checkOut.xaml;stableForm\reservationCheck.xaml;
 
 True
 
