@@ -39,11 +39,13 @@ namespace WPF_HotelManagement
             getDataGridView.bindGrid(cusGrid, "EXEC searchById @id = '"+customerID.Text+"'");
         }
         public static string selectedItemText;
+        public static string getStatus;
 
         private void cusGrid_SelectedCellsChanged(object sender, System.Windows.Controls.SelectedCellsChangedEventArgs e)
         {
             object selectedItem = cusGrid.SelectedItem;
             selectedItemText = (cusGrid.SelectedCells[0].Column.GetCellContent(selectedItem) as TextBlock).Text;
+            getStatus = (cusGrid.SelectedCells[4].Column.GetCellContent(selectedItem) as TextBlock).Text;
 
             customerDetail reserveCheck = new customerDetail();
             reserveCheck.Show();

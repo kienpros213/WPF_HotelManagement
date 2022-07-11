@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WPF_HotelManagement
 {
@@ -24,10 +14,28 @@ namespace WPF_HotelManagement
             InitializeComponent();
             getReservationData.getData(_cusID, customerId, reservationId, roomId, reservationDate, dateIn, dateOut, foreName, lastName, customerAddress, customerStatus);
             getReservationData.getServiceData(_cusID, breakfast, cleaning, carRenting, massage);
-            getClassAndPrice();
+            countTotal();
+            if(_cusStatus == "checked-out")
+            {
+                reservationId.IsReadOnly = true;
+                roomId.IsReadOnly = true;
+                reservationDate.IsReadOnly = true;
+                dateIn.IsReadOnly = true;
+                dateOut.IsReadOnly = true;
+                daysRange.IsReadOnly = true;
+                customerId.IsReadOnly = true;
+                foreName.IsReadOnly = true;
+                lastName.IsReadOnly = true;
+                customerAddress.IsReadOnly = true;
+                customerStatus.IsReadOnly = true;
+                breakfast.IsReadOnly = true;
+                cleaning.IsReadOnly = true;
+                carRenting.IsReadOnly = true;
+                massage.IsReadOnly = true;
+            }
         }
         string _cusID = customerForm.selectedItemText;
-
+        string _cusStatus = customerForm.getStatus;
         private void check_out_top_MouseDown(object sender, MouseButtonEventArgs e)
         {
             //check-out button
@@ -37,18 +45,10 @@ namespace WPF_HotelManagement
             MessageBox.Show("check-out success");
             this.Close();
         }
-        private void getClassAndPrice()
-        {
-            string _roomID = roomId.Text;
-            string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
-        }
 
         private void discount_LostFocus(object sender, RoutedEventArgs e)
         {
-            string _roomID = roomId.Text;
-            string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
+            countTotal();
         }
 
         private void check_out_top_MouseDown_1(object sender, MouseButtonEventArgs e)
@@ -59,26 +59,24 @@ namespace WPF_HotelManagement
 
         private void breakfast_LostFocus(object sender, RoutedEventArgs e)
         {
-            string _roomID = roomId.Text;
-            string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
+            countTotal();
         }
 
         private void cleaning_LostFocus(object sender, RoutedEventArgs e)
         {
-            string _roomID = roomId.Text;
-            string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
+            countTotal();
         }
 
         private void carRenting_LostFocus(object sender, RoutedEventArgs e)
         {
-            string _roomID = roomId.Text;
-            string cusID = customerId.Text;
-            count.total(_roomID, cusID, roomClass, price, daysRange, breakfast, carRenting, cleaning, massage, discount, total);
+            countTotal();
         }
 
         private void massage_LostFocus(object sender, RoutedEventArgs e)
+        {
+            countTotal();
+        }
+        private void countTotal()
         {
             string _roomID = roomId.Text;
             string cusID = customerId.Text;
