@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WPF_HotelManagement
 {
@@ -30,22 +20,22 @@ namespace WPF_HotelManagement
 
         private void single_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 1 AND roomStatus = 'unoccupied')");
+            getData("1");
         }
 
         private void double_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 2 AND roomStatus = 'unoccupied')");
+            getData("2");
         }
 
         private void family_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 3 AND roomStatus = 'unoccupied')");
+            getData("3");
         }
 
         private void suite_room_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = 4 AND roomStatus = 'unoccupied')");
+            getData("4");
         }
 
         private void comfirm_layer_MouseDown(object sender, MouseButtonEventArgs e)
@@ -64,6 +54,11 @@ namespace WPF_HotelManagement
         private void choose_room_top_layer_MouseDown(object sender, MouseButtonEventArgs e)
         {
             getDataGridView.bindGrid(roomGrid, "EXEC searchRoom @dateIn = '" + date_in.Text + "' ");
+        }
+
+        private void getData(string classID)
+        {
+            getDataGridView.bindGrid(roomGrid, "SELECT * FROM tblRoom WHERE (classID = "+classID+" AND roomStatus = 'unoccupied')");
         }
     }
 }
