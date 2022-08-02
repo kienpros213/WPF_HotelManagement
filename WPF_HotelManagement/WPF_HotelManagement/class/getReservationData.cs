@@ -4,10 +4,12 @@ namespace WPF_HotelManagement
 {
     class getReservationData
     {
+        //sql string thay vào đây
+        static string sql = "Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True";
         public static void getData(string _cusIDPar, System.Windows.Controls.TextBox _cusID, System.Windows.Controls.TextBox _reservationID, System.Windows.Controls.TextBox _roomID, System.Windows.Controls.TextBox _reserveDate, System.Windows.Controls.TextBox _dateIn, System.Windows.Controls.TextBox _dateOut, System.Windows.Controls.TextBox _cusFName, System.Windows.Controls.TextBox _cusLName, System.Windows.Controls.TextBox _cusAddress, System.Windows.Controls.TextBox _cusStatus)
         {
             string sqlstring = "EXEC viewProc @par = '" + _cusIDPar+"' ";
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
+            SqlConnection con = new SqlConnection(sql);
             SqlCommand command = new SqlCommand(sqlstring, con);
             con.Open();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -29,8 +31,7 @@ namespace WPF_HotelManagement
         public static void getServiceData(string cusID, System.Windows.Controls.TextBox breakfast, System.Windows.Controls.TextBox cleaning, System.Windows.Controls.TextBox carRenting, System.Windows.Controls.TextBox massage)
         {
             string sqlstring = "EXEC getServices @cusID = "+cusID+"";
-            string constring = "Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True";
-            using (SqlConnection con = new SqlConnection(constring))
+            using (SqlConnection con = new SqlConnection(sql))
             {
                 SqlCommand command = new SqlCommand(sqlstring, con);
                 SqlDataAdapter sda = new SqlDataAdapter(command);

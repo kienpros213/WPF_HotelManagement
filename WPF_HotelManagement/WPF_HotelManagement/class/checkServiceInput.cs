@@ -3,8 +3,12 @@ using System.Windows;
 
 namespace WPF_HotelManagement
 {
+
     class checkServiceInput
     {
+        //sql string thay vào đây
+        static string sql = "Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True";
+
         public static void Check(string cusID, System.Windows.Controls.TextBox breakfast, System.Windows.Controls.TextBox cleaing, System.Windows.Controls.TextBox carRenting, System.Windows.Controls.TextBox massage)
         {
             if(breakfast.Text != "0")
@@ -50,7 +54,7 @@ namespace WPF_HotelManagement
         public static void Query(string cusID, string serviceID, string amount)
         {
             string sqlstring = "EXEC updateServices @cusID = "+cusID+", @serviceID = "+serviceID+", @amount ="+amount+"";
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
+            SqlConnection con = new SqlConnection(sql);
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
             command.ExecuteNonQuery();
